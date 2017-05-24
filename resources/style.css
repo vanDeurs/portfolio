@@ -105,17 +105,29 @@ body {
     font-weight: 600;
 }
 
+.hire-button {
+    background: green;
+    color: #fff;
+}
+
 /* ABOUT SECTION */ 
 
 .about {
     display: flex;
     justify-content: center;
     text-align: center;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
     background: #fff;
-    width: 100%;
+    min-width: 100%;
     height: 800px;
     border: 2px solid black;
+}
+
+@media only screen and (max-width: 320px) {
+    .about {
+        top: 200px;
+    }
 }
 
 .about header {
