@@ -64,7 +64,7 @@ body {
 }
 
 .navbar-nav li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: red;
 }
 
@@ -93,15 +93,32 @@ body {
 /* LANDING PAGE */
 
 .landing {
-    border: 1px solid #fff;
     display: block;
     width: 100%;
     position: relative;
     top: 25%;
+    line-height: normal;
 }
 
-.align-right {
-    float: right;
+.landing h5 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.landing h4 {
+    font-size: 4rem;
+}
+
+.landing h3 {
+    font-size: 5rem;
+}
+
+.landing h1 {
+    font-size: 6rem;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #000;
+    display: inline-block;
+    padding-bottom: 10px
 }
 
 .landing span {
@@ -112,6 +129,9 @@ body {
 .hire-button {
     background: green;
     color: #fff;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-top: 3%;
 }
 
 /* ABOUT SECTION */ 
@@ -119,17 +139,15 @@ body {
 .about {
     background: linear-gradient(rgba(0,0,0,0.7), white);
     -webkit-background: linear-gradient(rgba(0,0,0,0.7), white);
-    position: relative;
+    width: 100%;
 }
 
 .about h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     border-top: 1.5px dotted rgba(255,255,255,.6);
     margin: 0 auto;
-    padding-right: 175px;
-    padding-left: 175px;
-    padding-top: 10px;
-    display: inline-block;
+    padding-top: 35px;
+    display: block;
 }
 
 @media only screen and (max-width: 320px) {
@@ -138,22 +156,25 @@ body {
     }
 }
 
+.info {
+    width: 100%;
+    
+}
+
 .about .about-box {
     padding: 2% 3%;
     border: 1px solid blue;
-    max-width: 999px;
-    line-height: 30px;
+    width: 65%;   
+    line-height: 35px;
     font-size: 1.5rem;
     margin-top: 2%;
+    float: left;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    left: 5px;
-    background: -moz-linear-gradient(left, rgba(248,181,0,1) 0%, rgba(248,181,0,1) 2%, rgba(251,223,147,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,181,0,1)), color-stop(2%, rgba(248,181,0,1)), color-stop(100%, rgba(251,223,147,1)));
-    background: -webkit-linear-gradient(left, rgba(248,181,0,1) 0%, rgba(248,181,0,1) 2%, rgba(251,223,147,1) 100%);
-    background: -o-linear-gradient(left, rgba(248,181,0,1) 0%, rgba(248,181,0,1) 2%, rgba(251,223,147,1) 100%);
-    background: -ms-linear-gradient(left, rgba(248,181,0,1) 0%, rgba(248,181,0,1) 2%, rgba(251,223,147,1) 100%);
-    background: linear-gradient(to right, rgba(248,181,0,1) 0%, rgba(248,181,0,1) 2%, rgba(251,223,147,1) 100%);
+    background: linear-gradient( 
+    rgba(100,55, 58, 0.6)
+  , rgba(100, 39, 240, 0.3)
+   );
     
     -webkit-box-shadow: -7px 7px 35px 3px rgba(0,0,0,0.69);
     -moz-box-shadow: -7px 7px 35px 3px rgba(0,0,0,0.69);
@@ -165,26 +186,40 @@ body {
     
 }
 
-.info {
-    display: flex;
-    flex-direction: row;
-}
 
 .about img {
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-    width: 450px;
-    height: 450px;
+    width: 30%;
+    height: 400px;
+    margin-left: 2%;
+    
+    
     border: 1px solid red;
-    display: inline-block;
     border-radius: 115px 27px 186px 34px;
     -moz-border-radius: 115px 27px 186px 34px;
     -webkit-border-radius: 115px 27px 186px 34px;
     overflow: hidden;
-    left: 10px;
     
 }
+.story {
+    background: linear-gradient( 
+    rgba(0,55, 87, 0.6)
+  , rgba(100, 0, 240, 0.4)
+   );
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 0%;
+    padding: 1% 2%;
+    font-family: Raleway, sans-serif;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #fff;
+    width: 65%;
+    margin: 2% auto;
+    line-height: 35px;
+}
+
 
 
 
