@@ -38,6 +38,7 @@ html, body {
     background: #ccc;
     height: 100%;
     font-size: 16px;
+    width: 100%;
 }
 
 body {
@@ -76,7 +77,7 @@ body {
     display: table;
     width: 100%;
     height: 100%; /* For at least Firefox */
-    min-height: 100%;
+    min-height: 100%; !important
     -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
     box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
     position: relative;
@@ -93,11 +94,16 @@ body {
 /* LANDING PAGE */
 
 .landing {
-    display: block;
-    width: 100%;
     position: relative;
     line-height: normal;
-    margin-top: 200px;
+    height: 100%;
+    padding-top: 50px;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.align-middle {
+    min-height: 100%;
 }
 
 .landing h5 {
@@ -117,7 +123,6 @@ body {
     font-size: 6rem;
     margin-bottom: 10px;
     border-bottom: 2px dotted #000;
-    display: inline-block;
     padding-bottom: 10px
 }
 
@@ -131,7 +136,6 @@ body {
     color: #fff;
     border-radius: 10px;
     font-size: 2rem;
-    margin-top: 3%;
 }
 
 /* ABOUT SECTION */ 
@@ -140,6 +144,8 @@ body {
     background: linear-gradient(rgba(0,0,0,0.7), white);
     -webkit-background: linear-gradient(rgba(0,0,0,0.7), white);
     width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
 }
 
 .about h1 {
@@ -151,6 +157,11 @@ body {
     text-transform: uppercase;
 }
 
+.about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 320px) {
     .about {
         top: 200px;
@@ -158,48 +169,31 @@ body {
 }
 
 .info {
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
     
 }
 
 .about-box {
-    padding: 2% 3%;
-    border: 1px solid blue;
-    width: 65%;   
+    width: 60%;
+    border: 1px solid yellow;
+    padding: 50px 50px;
+    margin: 0;
+    background: #ABAB9A;
     line-height: 35px;
     font-size: 1.5rem;
-    margin-top: 2%;
-    float: left;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    background: linear-gradient( 
-    rgba(100,55, 58, 0.6)
-  , rgba(100, 39, 240, 0.3)
-   );
-    
-    -webkit-box-shadow: -7px 7px 35px 3px rgba(0,0,0,0.69);
-    -moz-box-shadow: -7px 7px 35px 3px rgba(0,0,0,0.69);
-    box-shadow: -7px 7px 35px 3px rgba(0,0,0,0.69);
-    
-    border-radius: 115px 27px 186px 34px;
-    -moz-border-radius: 115px 27px 186px 34px;
-    -webkit-border-radius: 115px 27px 186px 34px;
-    
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
 }
 
-
 .about img {
-    width: 30%;
+    width: 40%;
     height: 400px;
-    margin-left: 2%;
-    
-    
     border: 1px solid red;
-    border-radius: 115px 27px 186px 34px;
-    -moz-border-radius: 115px 27px 186px 34px;
-    -webkit-border-radius: 115px 27px 186px 34px;
+    flex-basis: auto;
+    border-bottom-left-radius: 40px;
     overflow: hidden;
-    
 }
 .story {
     background: linear-gradient( 
@@ -209,19 +203,22 @@ body {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    margin-bottom: 0%;
     padding: 1% 2%;
     font-family: Raleway, sans-serif;
     overflow: hidden;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 1px solid #fff;
-    width: 65%;
+    width: 70%;
+    max-width: 1000px;
     margin: 2% auto;
     line-height: 35px;
 }
 
 
+
+Black: 8    
+Milk: 3
 
 
 
