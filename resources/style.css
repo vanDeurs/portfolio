@@ -35,10 +35,12 @@ h3 {
 }
 
 html, body {
-    background: #ccc;
     height: 100%;
-    font-size: 16px;
     width: 100%;
+    font-size: 16px;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0.7));
+
+
 }
 
 body {
@@ -46,6 +48,14 @@ body {
     text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,.9);
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    min-width: 90%;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 /* TOP NAVBAR */
@@ -78,11 +88,9 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%; !important
-    -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-    box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+    /*-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+    box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
     position: relative;
-	background: -webkit-linear-gradient(white, rgba(0,0,0,0.6));
-	background: linear-gradient(white, rgba(0,0,0,0.6));
 }
 
 .site-wrapper-inner {
@@ -96,14 +104,9 @@ body {
 .landing {
     position: relative;
     line-height: normal;
-    height: 100%;
     padding-top: 50px;
     margin-top: 5%;
     padding-bottom: 5%;
-}
-
-.align-middle {
-    min-height: 100%;
 }
 
 .landing h5 {
@@ -141,10 +144,6 @@ body {
 /* ABOUT SECTION */ 
 
 .about {
-    background: linear-gradient(rgba(0,0,0,0.7), white);
-    -webkit-background: linear-gradient(rgba(0,0,0,0.7), white);
-    width: 100%;
-    overflow: hidden;
     padding-top: 10px;
 }
 
@@ -171,7 +170,6 @@ body {
 .info {
     display: flex;
     flex-flow: row wrap;
-    overflow: hidden;
     
 }
 
@@ -195,30 +193,6 @@ body {
     border-bottom-left-radius: 40px;
     overflow: hidden;
 }
-.story {
-    background: linear-gradient( 
-    rgba(0,55, 87, 0.6)
-  , rgba(100, 0, 240, 0.4)
-   );
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    padding: 1% 2%;
-    font-family: Raleway, sans-serif;
-    overflow: hidden;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom: 1px solid #fff;
-    width: 70%;
-    max-width: 1000px;
-    margin: 2% auto;
-    line-height: 35px;
-}
-
-
-
-Black: 8    
-Milk: 3
 
 
 
