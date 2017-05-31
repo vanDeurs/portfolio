@@ -219,6 +219,9 @@ button:hover {
 /* ABOUT SECTION */ 
 
 
+.about {
+    background-color: bisque; !important
+}
 
 
 
