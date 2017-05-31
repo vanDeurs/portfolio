@@ -90,8 +90,6 @@ body {
     width: 100%;
     height: 100%; /* For at least Firefox */
     min-height: 100%; !important
-    /*-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
-    box-shadow: inset 0 0 5rem rgba(0,0,0,.5);*/
     position: relative;
 }
 
@@ -137,6 +135,8 @@ button:hover {
     }
 }
 
+/* LANDING PAGE MEDIA QUERIES */
+
 @media only screen and (max-width: 414px) {
   .landing .wrapper h1 {
       padding: 0px;
@@ -162,6 +162,8 @@ button:hover {
     
     .landing {
         padding-top: 20px;
+        padding-right: 3px;
+        padding-left: 3px;
     }
     
     button {
@@ -171,10 +173,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 320px) {
-    .landing {
-        padding-right: 3px;
-        padding-left: 3px;
-    }  
+
     
     .navbar {
         margin-bottom: 10px;
@@ -220,10 +219,64 @@ button:hover {
 
 
 .about {
-    background-color: bisque; !important
+    background: linear-gradient(#ccc, rgba(0,0,0,0.9));
+    height: 100%;
+    padding-top: 3%;
+}
+
+.about header h1 {
+    font-size: 6rem;
+}
+
+.aboutme {
+    background: linear-gradient( 
+    rgba(255,255,255,0.5)
+  , rgba(255,255,255,0.3)
+   );
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 0%;
+    padding: 1% 2%;
+    font-family: Raleway, sans-serif;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #fff;
+    max-width: 900px;
+    min-width: 200px;
+}
+
+.aboutme header h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.aboutme p {
+    line-height: 1.4;
+    font-size: 1.3rem;
 }
 
 
+
+
+
+/* SERVICE SECTION */
+
+.service {
+    background: linear-gradient(rgba(0,0,0,0.9), #ccc);
+    height: 100%;
+    padding-top: 3%;
+}
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    background: linear-gradient(#ccc, rgba(0,0,0,0.9));
+    height: 100%;
+    padding-top: 3%;
+}
 
 
 
