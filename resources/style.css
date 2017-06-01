@@ -85,6 +85,12 @@ body {
     margin-top: 10%;
 }
 
+@media only screen and (max-width: 1700px) {
+    .landing .wrapper {
+        margin-top: 3%;
+    }
+}
+
 .site-wrapper {
     display: table;
     width: 100%;
@@ -267,7 +273,22 @@ button:hover {
     background: linear-gradient(rgba(0,0,5,0.9), #ccc);
     height: 100%;
     padding-top: 3%;
-    
+}
+
+.service header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service header h1 {
+    font-size: 700;
+    font-family: Roboto;
+    font-size: 6rem;
+}
+
+.service header h3 {
+    font-size: 2rem;
+    font-family: Roboto;    
 }
 
 
