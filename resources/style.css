@@ -98,6 +98,12 @@ body {
     margin-top: 10%;
 }
 
+@media only screen and (max-width: 1700px) {
+    .landing .wrapper {
+        margin-top: 3%;
+    }
+}
+
 .site-wrapper {
     display: table;
     width: 100%;
@@ -283,6 +289,7 @@ button:hover {
     background: linear-gradient(rgba(0,0,5,0.9), #ccc);
     height: 100%;
     padding-top: 3%;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
 }
@@ -299,10 +306,24 @@ button:hover {
 .service header h1 {
     font-size: 6rem;
     font-weight: 800;
+=======
+}
+
+.service header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service header h1 {
+    font-size: 700;
+    font-family: Roboto;
+    font-size: 6rem;
+>>>>>>> 95adb052779124a89bbb571ddfc4f7c1d65a419a
 }
 
 .service header h3 {
     font-size: 2rem;
+<<<<<<< HEAD
     font-weight: 600;
 }
 
@@ -391,6 +412,9 @@ button:hover {
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 5px;
+=======
+    font-family: Roboto;    
+>>>>>>> 95adb052779124a89bbb571ddfc4f7c1d65a419a
 }
 
 #service-info-right li {
