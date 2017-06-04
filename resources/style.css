@@ -9,6 +9,19 @@ Website: charlesvandeurs.com
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 h1,h2,h3,h4,h5,h6,p {
     text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
     margin: 0;
@@ -115,6 +128,7 @@ button {
     margin-top: 15px;
     transition: .15s ease-in-out;
     text-transform:capitalize;
+    max-width: 90%;
 }
 
 button:hover {
@@ -226,6 +240,7 @@ button:hover {
 
 .about header h1 {
     font-size: 6rem;
+    font-weight: 800;
 }
 
 .aboutme {
@@ -250,6 +265,7 @@ button:hover {
 .aboutme header h3 {
     font-size: 2.5rem;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .aboutme p {
@@ -267,8 +283,131 @@ button:hover {
     background: linear-gradient(rgba(0,0,5,0.9), #ccc);
     height: 100%;
     padding-top: 3%;
-    
+    display: flex;
+    flex-direction: column;
 }
+
+/* SERVICE HEADER */
+
+.service header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.service header h1 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.service header h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.service header span {
+    font-weight: 900;
+}
+
+/* SERVICE HEADER STOPS */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+.quote {
+    max-width: 800px;
+    padding: 1.5rem .5rem;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    float: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+.quote p {
+    font-size: 2rem;
+    font-family: 'Anton', sans-serif;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.service-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#service-info-left {
+    max-width: 970px;
+    width: 50%;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    padding: 1.5rem 2.5rem;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 1030px) {
+    #service-info-left {
+        margin: 0 10px;
+        margin-top: 10px;
+    }   
+}
+
+@media only screen and (max-width: 864px) {
+    .quote {
+        float: none;
+        margin: 0 10px;
+    }
+}
+
+
+@media only screen and (max-width: 578px) {
+    #service-info-left {
+        padding: 0.6rem 0.4rem;
+        margin: 0 5px;
+    }
+    
+    .quote {
+        margin: 0 5px;
+    }
+}
+
+
+#service-info-right {
+    float: right;
+    line-height: 1.3;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    width: 45%;
+    margin: 0 auto;
+}
+
+#service-info-right h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+#service-info-right li {
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#service-info-right span {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+
 
 
 /* PORTFOLIO SECTION */
