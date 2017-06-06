@@ -63,9 +63,9 @@ body {
 }
 
 .wrapper {
-    min-width: 90%;
     margin: 0 auto;
     max-width: 1440px;
+    min-width: 90%;
 }
 
 /* TOP NAVBAR */
@@ -129,12 +129,25 @@ body {
     background: linear-gradient(rgba(0,0,0,0.9), #ccc);
 }
 
+
+
 button {
     padding: 10px 15px;
     margin-top: 15px;
     transition: .15s ease-in-out;
     text-transform:capitalize;
     max-width: 90%;
+    background: green;
+    color: rgba(255,255,255,1);
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: -.8px 0 #000, 0 .8px #000, .8px 0 #000, 0 -.8px #000;
+    position: relative;
+    -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
 }
 
 button:hover {
@@ -142,8 +155,16 @@ button:hover {
     -webkit-box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
     -moz-box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
     box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
+    text-shadow: -1.3px 0 #000, 0 1.3px #000, 1.3px 0 #000, 0 -1.3px #000;
 }
 
+button:active {
+    margin-top: 15px;
+    -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    -moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    
+}
 @media only screen and (max-width: 768px) {
   .wrapper h1, h3, h4 {
       padding: 5px 0;
@@ -165,8 +186,7 @@ button:hover {
       font-size: 5rem;
     }
     .landing .wrapper h4 {
-        padding: 0;
-        margin: 0 auto;
+        padding-top: 25px;
         line-height: 50px;
         font-size: 3rem;
     }
@@ -177,7 +197,7 @@ button:hover {
         margin: 0;
     }
     .navbar {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     
     .landing {
@@ -191,12 +211,27 @@ button:hover {
         padding: 5px 10px;
     }
 }
+@media only screen and (max-width: 358px) {
+  .landing .wrapper h1 {
+      font-size: 4rem;
+      line-height: 60px;
+    }
+    .landing .wrapper h4 {
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .landing .wrapper h3 {
+        font-size: 3rem;
+        line-height: 55px;
+    }
+}
 
-@media only screen and (max-width: 320px) {
+
+@media only screen and (max-width: 328px) {
 
     
-    .navbar {
-        margin-bottom: 10px;
+    .landing .wrapper h4 {
+        padding-top: 40px;
     }
 }
 
@@ -228,13 +263,6 @@ button:hover {
     font-weight: 600;
 }
 
-.hire-button {
-    background: green;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 2rem;
-}
-
 /* ABOUT SECTION */ 
 
 
@@ -245,7 +273,7 @@ button:hover {
 }
 
 .about header h1 {
-    font-size: 6rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
@@ -269,7 +297,7 @@ button:hover {
 }
 
 .aboutme header h3 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 5px;
     font-weight: 700;
 }
@@ -289,7 +317,6 @@ button:hover {
     background: linear-gradient(rgba(0,0,5,0.9), #ccc);
     height: 100%;
     padding-top: 3%;
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
 }
@@ -306,7 +333,6 @@ button:hover {
 .service header h1 {
     font-size: 6rem;
     font-weight: 800;
-=======
 }
 
 .service header {
@@ -318,12 +344,10 @@ button:hover {
     font-size: 700;
     font-family: Roboto;
     font-size: 6rem;
->>>>>>> 95adb052779124a89bbb571ddfc4f7c1d65a419a
 }
 
 .service header h3 {
     font-size: 2rem;
-<<<<<<< HEAD
     font-weight: 600;
 }
 
@@ -342,16 +366,14 @@ button:hover {
 .quote {
     max-width: 800px;
     padding: 1.5rem .5rem;
-    border-left: 3px solid #fff;
-    border-right: 3px solid #fff;
     float: right;
     margin-right: 25px;
-    margin-top: 10px;
+    display: inline;
 }
 
 .quote p {
-    font-size: 2rem;
-    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.2;
     font-weight: 900;
 }
@@ -412,9 +434,7 @@ button:hover {
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 5px;
-=======
     font-family: Roboto;    
->>>>>>> 95adb052779124a89bbb571ddfc4f7c1d65a419a
 }
 
 #service-info-right li {
@@ -422,7 +442,7 @@ button:hover {
     font-weight: 700;
     text-align: left;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto;  4 2.7
 }
 
 #service-info-right span {
@@ -431,6 +451,39 @@ button:hover {
     color: #ccc;
 }
 
+
+@media only screen and (max-width: 1150px) {
+    .service-info {
+        flex-direction: column;
+    }
+    #service-info-right {
+        width: 95%;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    #service-info-left {
+        width: 95%;
+        float: none;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 660px) {
+    #service-info-right h1 {
+        font-size: 3rem;   
+    }
+
+    #service-info-right li {
+        font-size: 1.7rem;
+        width: 70%;
+    }
+
+    #service-info-right span {
+        font-size: 1.5rem;
+    }
+}
 
 
 
