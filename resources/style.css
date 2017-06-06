@@ -22,7 +22,7 @@ Website: charlesvandeurs.com
   }
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,li,span {
     text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
     margin: 0;
     padding: 0;
@@ -273,25 +273,18 @@ button:active {
 }
 
 .about header h1 {
-    font-size: 1rem;
+    font-size: 6rem;
     font-weight: 800;
 }
 
+.about header h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .aboutme {
-    background: linear-gradient( 
-    rgba(255,255,255,0.5)
-  , rgba(255,255,255,0.3)
-   );
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin-bottom: 0%;
     padding: 1% 2%;
     font-family: Raleway, sans-serif;
-    overflow: hidden;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom: 1px solid #fff;
     max-width: 900px;
     min-width: 200px;
 }
@@ -386,8 +379,6 @@ button:active {
 #service-info-left {
     max-width: 970px;
     width: 50%;
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
     font-size: 1.6rem;
     line-height: 1.3;
     padding: 1.5rem 2.5rem;
@@ -425,30 +416,41 @@ button:active {
     float: right;
     line-height: 1.3;
     border-left: 3px solid #fff;
-    border-right: 3px solid #fff;
     width: 45%;
     margin: 0 auto;
+    padding: 0 0.75rem 0 2rem;
+    margin-left: 10px;
 }
 
 #service-info-right h1 {
     font-size: 4rem;
     font-weight: 900;
-    margin-bottom: 5px;
-    font-family: Roboto;    
+    font-family: Roboto;
+    border-bottom: 4px solid #fff;
+    -webkit-box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
+    box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
+    display: inline;
 }
 
 #service-info-right li {
-    font-size: 2.7rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: left;
     width: 70%;
     margin: 0 auto;  4 2.7
+    list-style: circle;
+    list-style-type: circle;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
 }
 
 #service-info-right span {
     font-weight: 200;
     font-size: 1.5rem;
     color: #ccc;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
 }
 
 
@@ -460,6 +462,7 @@ button:active {
         width: 95%;
         float: none;
         margin: 0 auto;
+        border:none;
     }
     
     #service-info-left {
@@ -485,6 +488,13 @@ button:active {
     }
 }
 
+hr {
+    border-color: ghostwhite;
+    border-width: 5px;
+    max-width: 80px;
+    margin: 20px auto;
+    border-radius: 50px;
+}
 
 
 /* PORTFOLIO SECTION */
