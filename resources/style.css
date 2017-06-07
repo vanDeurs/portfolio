@@ -55,7 +55,6 @@ html, body {
 
 body {
     text-align: center;
-    text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,.9);
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     width: 100%;
@@ -126,7 +125,8 @@ body {
     padding-top: 50px;
     padding-bottom: 5%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.9), #ccc);
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(255,255,255,1));
+    border-bottom: 1px solid #000;
 }
 
 
@@ -267,7 +267,7 @@ button:active {
 
 
 .about {
-    background: linear-gradient(#ccc, rgba(5,0,0,0.9));
+    background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.5));
     height: 100%;
     padding-top: 3%;
 }
@@ -307,11 +307,12 @@ button:active {
 /* SERVICE SECTION */
 
 .service {
-    background: linear-gradient(rgba(0,0,5,0.9), #ccc);
+    background: linear-gradient(rgba(56,106,177,0.5), rgba(255,255,255,1));
     height: 100%;
     padding-top: 3%;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid #000;
 }
 
 /* SERVICE HEADER */
@@ -427,14 +428,11 @@ button:active {
     font-weight: 900;
     font-family: Roboto;
     border-bottom: 4px solid #fff;
-    -webkit-box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
-    box-shadow: 1px 18px 24px -12px rgba(0,0,0,0.75);
     display: inline;
 }
 
 #service-info-right li {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     width: 70%;
@@ -500,7 +498,7 @@ hr {
 /* PORTFOLIO SECTION */
 
 .portfolio {
-    background: linear-gradient(#ccc, rgba(0,5,0,0.9));
+    background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.5));
     height: 100%;
     padding-top: 3%;
 }
