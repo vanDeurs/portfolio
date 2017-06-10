@@ -500,9 +500,103 @@ hr {
 .portfolio {
     background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.5));
     height: 100%;
-    padding-top: 3%;
 }
 
+.portfolio h1 {
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+
+.portfolio-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2%;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-box {
+    width: 30%;
+    margin: 2%;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    position: relative;
+    widows: 100%;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+}
+
+.image-box span {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    position: absolute;
+    width: 90%;
+    top: 2%;
+    left: 7%;
+    color: transparent;
+    transition: all 400ms ease-in-out;
+    text-shadow: none;
+}
+
+.portfolio-box:hover > .image-box img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.portfolio-box:hover > .image-box span {
+    color: blue;
+}
+
+#portfolio-info {
+    border-radius: 20px;
+    background: #2D4DD0;
+}
+
+#portfolio-info p {
+    text-shadow: none;
+    padding: 2% 3%;
+}
+
+.portfolio-box p {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.portfolio-box-text {
+    display: block;
+}
+
+.portfolio-box-text p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+    
+}
 
 
 
