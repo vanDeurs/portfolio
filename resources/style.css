@@ -23,7 +23,7 @@ Website: charlesvandeurs.com
 }
 
 h1,h2,h3,h4,h5,h6,p,li,span {
-    text-shadow: -1.5px 0 #000, 0 1.5px #000, 1.5px 0 #000, 0 -1.5px #000;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     margin: 0;
     padding: 0;
 }
@@ -267,7 +267,7 @@ button:active {
 
 
 .about {
-    background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.5));
+    background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.4));
     height: 100%;
     padding-top: 3%;
 }
@@ -307,7 +307,7 @@ button:active {
 /* SERVICE SECTION */
 
 .service {
-    background: linear-gradient(rgba(56,106,177,0.5), rgba(255,255,255,1));
+    background: linear-gradient(rgba(56,106,177,0.4), rgba(255,255,255,1));
     height: 100%;
     padding-top: 3%;
     display: flex;
@@ -386,6 +386,13 @@ button:active {
     margin-left: 25px;
 }
 
+#service-info-left p {
+    font-size: 1.3rem;
+    color: #9ea8b6;
+    line-height: 1.5;
+    
+}
+
 @media only screen and (max-width: 1030px) {
     #service-info-left {
         margin: 0 10px;
@@ -429,11 +436,14 @@ button:active {
     font-family: Roboto;
     border-bottom: 4px solid #fff;
     display: inline;
+    text-shadow: -1.3px 0 #000, 0 1.3px #000, 1.3px 0 #000, 0 -1.3px #000;
+    margin-bottom: 25px;
+    display: block;
 }
 
 #service-info-right li {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 600;
     text-align: left;
     width: 70%;
     margin: 0 auto;  4 2.7
@@ -441,14 +451,20 @@ button:active {
     list-style-type: circle;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
+    color: #fff;
+    text-shadow: -1.3px 0 #000, 0 1.3px #000, 1.3px 0 #000, 0 -1.3px #000;
 }
 
 #service-info-right span {
     font-weight: 200;
-    font-size: 1.5rem;
-    color: #ccc;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #9ea8b6;
+    margin-bottom: 30px;
+    display: block;
+    max-width: 75%;
+    
 }
 
 
@@ -487,7 +503,7 @@ button:active {
 }
 
 hr {
-    border-color: ghostwhite;
+    border-color: #9ea8b6;
     border-width: 5px;
     max-width: 80px;
     margin: 20px auto;
