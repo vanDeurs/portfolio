@@ -129,7 +129,7 @@ body {
     border-bottom: 1px solid #000;
 }
 
-
+/* BUTTON */
 
 button {
     padding: 10px 15px;
@@ -240,7 +240,7 @@ button:active {
     }
 }
 
-
+/* LANDING FONTS */
 
 
 .landing h5 {
@@ -278,6 +278,8 @@ button:active {
     border-bottom: 1px solid white;
 }
 
+/* ABOUT HEADER */
+
 .about header h1 {
     font-size: 6rem;
     font-weight: 800;
@@ -287,6 +289,8 @@ button:active {
     font-size: 2rem;
     font-weight: 500;
 }
+
+/* ABOUT ME TEXT MAIN*/
 
 .aboutme {
     padding: 1% 2%;
@@ -386,6 +390,8 @@ button:active {
     width: 100%;
 }
 
+/* SERVICE INFO LEFT SIDE */
+
 #service-info-left {
     width: 50%;
     font-size: 1.6rem;
@@ -431,6 +437,7 @@ button:active {
     }
 }
 
+/* SERVICE INFO RIGHT SIDE */
 
 #service-info-right {
     line-height: 1.3;
@@ -477,9 +484,13 @@ button:active {
     padding-bottom: 15px;
     border-bottom: 1px solid grey;
     text-shadow: none;
-    
 }
 
+#service-info-right #no-border {
+    border: none;
+}
+
+/* SERVICE MEDIA QUERIES */
 
 @media only screen and (max-width: 1150px) {
     .service-info {
@@ -532,7 +543,7 @@ hr {
 }
 
 .portfolio h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 25px;
 }
 
@@ -542,11 +553,12 @@ hr {
     flex-wrap: wrap;
     width: 100%;
     padding: 2%;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
+
+/* THE SEPERATE PORTFOLIO BOXES */
 
 .portfolio-box {
     width: 45%;
@@ -565,13 +577,13 @@ hr {
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: auto;
     border-radius: 5px;
 }
 
 .image-box img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
     border-radius: 5px;
     transition: all .35s ease-in-out;
     opacity: 1;
@@ -589,6 +601,50 @@ hr {
     text-shadow: none;
 }
 
+.image-box span a {
+    font-size: 1.4rem;
+    color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 7px 17px;
+    background: transparent;
+    transition: all 400ms ease-in-out;
+    display: inline-block;
+    font-weight: 700;
+    transition: background 300ms linear;
+    text-decoration: none;
+}
+
+/* PORTFOLIO BOXES HOVERING EFFECTS */
+
+.portfolio-box:hover > .image-box span a:hover {
+    border: 2px solid #fff;
+    background: green;
+    color: #fff;
+}
+
+.portfolio-box:hover > .image-box span a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #fff;
+    transform: scaleX(0);  
+    transition: transform 350ms ease-in-out;
+    transform-origin:50% 50%;
+}
+.portfolio-box:hover > .image-box span a:hover:after { 
+    transform: scaleX(1);
+    transform-origin:0% 100%;
+    border-color: #fff;
+}
+
+.portfolio-box:hover > .image-box span a {
+    color: green;
+    font-size: 1.6rem;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
 .portfolio-box:hover > .image-box img{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -596,9 +652,12 @@ hr {
     opacity: .2;
 }
 
-.portfolio-box:hover > .image-box span {
+.portfolio-box:hover > .image-box span{
     color: blue;
+    font-size: 1.5rem;
 }
+
+/* PORTFOLIO TEXT CODE */
 
 #portfolio-info {
     border-radius: 20px;
@@ -619,13 +678,6 @@ hr {
     font-weight: 500;
 }
 
-.portfolio-box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
 .portfolio-box-text {
     display: block;
 }
@@ -634,6 +686,8 @@ hr {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.4;
+    text-shadow: none;
+    color: blue;
     
 }
 
@@ -646,6 +700,7 @@ hr {
         width: 100%;
     }
 }
+
 
 
 
