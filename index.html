@@ -41,7 +41,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                            <li><a href="#contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="#home">Home</a></li>
@@ -198,11 +198,34 @@
         </div>
         
         <!-- CONTACT PAGE -->
-        
-        <div class="contact">
+        <div class="site-wrapper" id="contact">
+            <div class="site-wrapper-inner">
+                <div class="contact">
+                    <header>
+                        <h1>Contact</h1>
+                    </header>
+                    
+                <div id="contact" class="contact-container">
+                    <form method="post" action="index.php">
+                        <h2>Get it touch!</h2>
+                        <label for="fname">Name*</label>
+                        <input type="text" id="name" name="name" placeholder="Name..">
+                        
+                        <label for="lname">Email*</label>
+                        <input type="text" id="email" name="email" placeholder="Email..">
+                        
+                        <label for="subject">Message*</label>
+                        <textarea id="message" name="message" placeholder="Message.."></textarea>
+                        
+                        <input id="submit" name="submit"type="submit" value="Submit">
+                    </form>
+                </div>
+                    
             
             
             
+                </div>
+            </div>
         </div>
         
         
