@@ -224,6 +224,11 @@ button:active {
         font-size: 3rem;
         line-height: 55px;
     }
+    
+    .quote p{
+        display: none;
+        position: absolute;
+    }
 }
 
 
@@ -518,12 +523,12 @@ hr {
     border-radius: 50px;
 }
 
-
 /* PORTFOLIO SECTION */
 
 .portfolio {
     background: linear-gradient(rgba(255,255,255,1), rgba(56,106,177,0.5));
     height: 100%;
+    padding-top: 3%;
 }
 
 .portfolio h1 {
@@ -540,22 +545,27 @@ hr {
     border: 2px solid red;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .portfolio-box {
-    width: 30%;
+    width: 45%;
     margin: 2%;
-    border: 2px solid yellow;
+    border: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .image-box {
     position: relative;
-    widows: 100%;
+    width: 100%;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .image-box img {
@@ -564,15 +574,16 @@ hr {
     margin-bottom: 10px;
     border-radius: 5px;
     transition: all .35s ease-in-out;
+    opacity: 1;
 }
 
 .image-box span {
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 1.5rem;
+    line-height: 1.5;
     position: absolute;
     width: 90%;
-    top: 2%;
-    left: 7%;
+    top: 15%;
+    left: 5%;
     color: transparent;
     transition: all 400ms ease-in-out;
     text-shadow: none;
@@ -582,6 +593,7 @@ hr {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    opacity: .2;
 }
 
 .portfolio-box:hover > .image-box span {
@@ -590,7 +602,10 @@ hr {
 
 #portfolio-info {
     border-radius: 20px;
-    background: #2D4DD0;
+    background: #fff;
+    color: darkgray;
+    max-height: 350px;
+    height: 350px;
 }
 
 #portfolio-info p {
@@ -620,6 +635,16 @@ hr {
     font-weight: 400;
     line-height: 1.4;
     
+}
+
+
+/* PORTFOLIO MEDIA QUERIES */
+
+@media only screen and (max-width: 1200px) {
+    .portfolio-box {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 
