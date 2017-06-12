@@ -561,7 +561,9 @@ hr {
 /* THE SEPERATE PORTFOLIO BOXES */
 
 .portfolio-box {
-    width: 45%;
+    max-width: 800px;
+    width: 700px;
+    height: auto;
     margin: 2%;
     border: 1px solid #fff;
     display: flex;
