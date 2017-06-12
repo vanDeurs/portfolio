@@ -7,8 +7,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!-- Optional Bootstrap theme -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- CSS LINKS -->
       <link href="resources/css/style.css" type="text/css" rel="stylesheet">
       <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
+      <link href="resources/css/pre-loader.css" rel="stylesheet" type="text/css">
       <!-- GOOGLE FONTS -->
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:500i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
@@ -19,11 +21,21 @@
       <meta name="description" content="Hi! I'm Alexander, and this is my portfolio as a young freelance web developer. I develop clean, creative and elegant looking website for my clients.">
       <meta name="copyright" content="Alexander Wilson van Deurs">
       
+      <!-- JS FILES -->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <script src="./resources/js/pre-loader.js"></script>
+      
 
       
     </head>
     <body>
-        <div class="se-pre-con"></div>
+        <!-- PRE-LOADER -->
+        
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
         
         <!-- NAVBAR -->
         
@@ -222,9 +234,7 @@
                     </form>
                 </div>
                     
-            
-            
-            
+                    
                 </div>
             </div>
         </div>
@@ -243,8 +253,5 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   </body>
 </html>
