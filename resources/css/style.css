@@ -77,15 +77,8 @@ body {
     z-index: 999;
 }
 
-.navbar-brand {
-    font-size: 2rem;
-    color: #fff;
-    z-index: 100000;
-}
-
-.navbar-nav li a {
-    font-size: 1rem;
-    color: red;
+.navbar {
+    margin: 0; 
 }
 
 
