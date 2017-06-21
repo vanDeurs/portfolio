@@ -80,6 +80,40 @@ body {
     top: -80%;
 }
 
+.text-landing img {
+    display: block;
+    width: 64px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+  -webkit-transition: -webkit-all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.bounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  background: url("../pictures/down-arrow.png");
+  -webkit-animation:bounce 1s infinite;
+    width: 64px;
+    height: 64px;
+}
+
+@-webkit-keyframes bounce {
+  0% { bottom:0; }
+  50% { bottom:20px; }
+  100% {bottom:0;}
+}
+
+
+a.bounce:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 
 /* LANDING PAGE MEDIA QUERIES */
 @media only screen and (max-width: 796px ){
@@ -95,7 +129,10 @@ body {
     button p {
         font-size: 1rem;
         padding: 5px 7px;
-    }   
+    }
+    .text-landing img {
+        top: 120px;
+    }
 }
 
 @media only screen and (max-width: 338px ){ 
@@ -116,6 +153,8 @@ body {
 
 .jumbotron {
     height: 100vh;
+    top: 0;
+    position: relative;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -152,7 +191,7 @@ button {
     transition: .15s ease-in-out;
     text-transform:capitalize;
     max-width: 90%;
-    background: green;
+    background: #4CFF51;
     color: rgba(255,255,255,1);
     border-radius: 10px;
     font-size: 1.8rem;
@@ -186,7 +225,7 @@ button:active {
 
 
 .about {
-    background: #113447;
+    background: #506E86;
     height: 100%;
     padding-top: 3%;
     padding-bottom: 1%;
@@ -220,7 +259,7 @@ button:active {
 /* LEFT IMAGE */
 .image-container {
     max-width: 600px;
-    min-width: 350px;
+    min-width: 280px;
     width: 30%;
     height: auto;
     display: flex;
@@ -240,7 +279,7 @@ button:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: grey;
+    background-color: #DCE2E3;
     width: 100%;
     justify-content: space-around;
     border-bottom-right-radius: 10px;
@@ -252,11 +291,13 @@ button:active {
     height: auto;
     display: inline-flex;
     margin: 5px 0;
-    transition: background .3s ease-in-out;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
 }
 
 .social img:hover {
-    background: rgba(255,255,255,.9);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg)
 }
 
 /* RIGHT ABOUT BOXES*/
@@ -309,18 +350,19 @@ button:active {
 
 .info-box-text h5 {
     font-size: 1.15rem;
-    color: ghostwhite;
+    color: #DCE2E3;
     font-weight: 600;
     line-height: 1.3;
 }
 
 .about-text {
-    padding: 1% 5%;
+    width: 100%;
+    padding: 10px 15px;
 }
 
 .about-text p {
     font-size: 1.2rem;
-    color: ghostwhite;
+    color: #DCE2E3;
     line-height: 1.4;
     font-weight: 500;
 }
@@ -331,7 +373,65 @@ button:active {
     }
     .image-container {
         width: 100%;
+        margin: 10px auto;
+        margin-bottom: none;
     }
+    
+    .about-info {
+        margin: 10px auto;
+        margin-bottom: none;
+        width: 100%;
+        padding: 0 5%;
+    }
+    .about-info-box {
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 788px) {
+    .about-text{
+        padding: 0;
+    }
+    .about-text p {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 616px) {
+    .about-top {
+        width: 100%;
+        justify-content: flex-start;
+    }  
+    .image-container img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 457px) {
+    .about header h1 {
+        font-size: 3.5rem;
+    }   
+    .about header h3 {
+        font-size: 1.3rem;
+    }
+    .info-box-text h3 {
+        font-size: 1.2rem;
+        margin-bottom: .7%;
+    }
+    .info-box-text h5 { 
+        font-size: 1rem;
+    }
+    
+    .about-info-box {
+        margin: 7px 0;
+    }
+    .about-text p {
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+    
+    
 }
 
 
@@ -342,13 +442,14 @@ button:active {
 /* SERVICE SECTION */
 
 .service {
-    background: #284B5C;
+    background: #648094;
     height: 100%;
     padding-top: 3%;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid #fff;
     padding-bottom: 3%;
+    position: relative;
 }
 
 /* SERVICE HEADER */
@@ -562,10 +663,11 @@ hr {
 /* PORTFOLIO SECTION */
 
 .portfolio {
-    background: #103242;
+    background: #748FA1;
     height: 100%;
     padding-top: 3%;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid #fff;
+    position: relative;
 }
 
 .portfolio h1 {
@@ -736,11 +838,12 @@ hr {
 /* CONTACT PAGE */
 
 .contact {
-    background: #505F66;
+    background: #9FB9C0;
     height: 100%;
     padding-top: 3%;
-    border-bottom: 1px solid grey;
     padding-bottom: 3%;
+    border-top: 1px solid #fff;
+    position: relative;
 }
 
 .contact header h1 {
@@ -822,8 +925,9 @@ footer {
     align-items: center;
     justify-content: flex-start;
     padding-left: 10%;
-    background: #154359;
+    background: #DCE2E3;
     color: #fff;
+    position: relative;
 }
 
 

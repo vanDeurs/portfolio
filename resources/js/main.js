@@ -22,4 +22,9 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
+    
+    $('#arrow-down').click(function (){
+    });
 });
+
+
