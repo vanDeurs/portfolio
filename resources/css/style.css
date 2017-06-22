@@ -65,11 +65,13 @@ body {
 /* LANDING PAGE STYLES */
 
 .text-landing h4 {
+    font-size: 48px;
     font-size: 3rem;
     line-height: 1.2;
 }
 
 .text-landing h1 {
+    font-size: 96px;
     font-size: 6rem;
 }
 
@@ -88,6 +90,7 @@ body {
     margin: 0 auto;
     top: 150px;
   -webkit-transition: -webkit-all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
 
@@ -188,34 +191,30 @@ a.bounce:hover {
 button {
     padding: 10px 15px;
     margin-top: 15px;
+    -webkit-transition: .15s ease-in-out;
     transition: .15s ease-in-out;
     text-transform:capitalize;
     max-width: 90%;
     background: #4CFF51;
     color: rgba(255,255,255,1);
     border-radius: 10px;
+    font-size: 28.8px;
     font-size: 1.8rem;
     font-weight: 900;
     text-transform: uppercase;
     text-shadow: -.8px 0 #000, 0 .8px #000, .8px 0 #000, 0 -.8px #000;
     position: relative;
-    -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
-    -moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
     box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
 }
 
 button:hover {
     margin-top: 10px;
-    -webkit-box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
-    -moz-box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
     box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
     text-shadow: -1.3px 0 #000, 0 1.3px #000, 1.3px 0 #000, 0 -1.3px #000;
 }
 
 button:active {
     margin-top: 15px;
-    -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
-    -moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
     box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
     
 }
@@ -236,12 +235,14 @@ button:active {
 /* ABOUT HEADER */
 
 .about header h1 {
+    font-size: 96px;
     font-size: 6rem;
     font-weight: 800;
     color: #ccc;
 }
 
 .about header h3 {
+    font-size: 32px;
     font-size: 2rem;
     font-weight: 500;
     color: #ccc;
@@ -252,8 +253,13 @@ button:active {
 
 .about-main {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 /* LEFT IMAGE */
@@ -262,9 +268,16 @@ button:active {
     min-width: 280px;
     width: 30%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 2.5%;
 }
 
@@ -276,12 +289,20 @@ button:active {
 }
 
 .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: #DCE2E3;
     width: 100%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -289,10 +310,14 @@ button:active {
 .social img {
     width: 50px;
     height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin: 5px 0;
   -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
 .social img:hover {
@@ -304,43 +329,74 @@ button:active {
 
 .about-info {
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .about-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
-    flex-wrap: wrap;
-    flex: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
 }
 .about-info-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: .5% 0;
     width: 33%;
     min-width: 270px;
 }
 
 .info-box-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
 }
 
 .about-info-box img {
     width: 40px;
     height: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     margin-right: 25px;
 }
 
 .info-box-text h3 {
+    font-size: 22.4px;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1%;
@@ -349,6 +405,7 @@ button:active {
 }
 
 .info-box-text h5 {
+    font-size: 18.4px;
     font-size: 1.15rem;
     color: #DCE2E3;
     font-weight: 600;
@@ -361,6 +418,7 @@ button:active {
 }
 
 .about-text p {
+    font-size: 19.2px;
     font-size: 1.2rem;
     color: #DCE2E3;
     line-height: 1.4;
@@ -369,7 +427,10 @@ button:active {
 
 @media only screen and (max-width: 955px) {
     .about-main {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .image-container {
         width: 100%;
@@ -400,7 +461,9 @@ button:active {
 @media only screen and (max-width: 616px) {
     .about-top {
         width: 100%;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }  
     .image-container img {
         border-top-left-radius: 0;
@@ -445,8 +508,13 @@ button:active {
     background: #648094;
     height: 100%;
     padding-top: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-top: 1px solid #fff;
     padding-bottom: 3%;
     position: relative;
@@ -455,20 +523,30 @@ button:active {
 /* SERVICE HEADER */
 
 .service header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     text-align: center;
     margin: 0 auto;
 }
 .service header h1 {
     font-size: 700;
     font-family: Roboto;
+    font-size: 96px;
     font-size: 6rem;
 }
 
 .service header h3 {
+    font-size: 32px;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -476,13 +554,20 @@ button:active {
 /* SERVICE HEADER STOPS */
 
 .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-basis: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
 }
 
 .quote {
     max-width: 800px;
+    padding: 24px 8px;
     padding: 1.5rem .5rem;
     float: right;
     margin-right: 25px;
@@ -490,6 +575,7 @@ button:active {
 }
 
 .quote p {
+    font-size: 48px;
     font-size: 3rem;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.2;
@@ -497,9 +583,16 @@ button:active {
 }
 
 .service-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
 }
 
@@ -507,8 +600,10 @@ button:active {
 
 #service-info-left {
     width: 50%;
+    font-size: 25.6px;
     font-size: 1.6rem;
     line-height: 1.3;
+    padding: 24px 40px;
     padding: 1.5rem 2.5rem;
     margin-left: 15px;
     background: #fff;
@@ -517,6 +612,7 @@ button:active {
 }
 
 #service-info-left p {
+    font-size: 20.8px;
     font-size: 1.3rem;
     color: #9ea8b6;
     line-height: 1.5;
@@ -555,12 +651,20 @@ button:active {
 #service-info-right {
     line-height: 1.3;
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #service-info-right h1 {
+    font-size: 64px;
     font-size: 4rem;
     font-weight: 900;
     font-family: Roboto;
@@ -571,6 +675,7 @@ button:active {
 }
 
 #service-info-right li {
+    font-size: 35.2px;
     font-size: 2.2rem;
     font-weight: 600;
     width: 100%;
@@ -587,6 +692,7 @@ button:active {
 
 #service-info-right span {
     font-weight: 200;
+    font-size: 20.8px;
     font-size: 1.3rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
@@ -607,7 +713,10 @@ button:active {
 
 @media only screen and (max-width: 1150px) {
     .service-info {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #service-info-right {
         width: 95%;
@@ -673,19 +782,32 @@ hr {
 }
 
 .portfolio h1 {
+    font-size: 96px;
     font-size: 6rem;
     margin-bottom: 25px;
 }
 
 .portfolio-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     padding: 2%;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 /* THE SEPERATE PORTFOLIO BOXES */
@@ -696,10 +818,19 @@ hr {
     height: auto;
     margin: 2%;
     border: 1px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #fff;
     border-radius: 5px;
     border: 1px solid grey;
@@ -717,11 +848,14 @@ hr {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    -webkit-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .image-box span {
+    font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.5;
     position: absolute;
@@ -729,11 +863,13 @@ hr {
     top: 15%;
     left: 5%;
     color: transparent;
+    -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     text-shadow: none;
 }
 
 .image-box span a {
+    font-size: 22.4px;
     font-size: 1.4rem;
     color: transparent;
     border: 1px solid transparent;
@@ -741,9 +877,11 @@ hr {
     margin-top: 10px;
     padding: 7px 17px;
     background: transparent;
+    -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     display: inline-block;
     font-weight: 700;
+    -webkit-transition: background 300ms linear;
     transition: background 300ms linear;
     text-decoration: none;
 }
@@ -760,32 +898,41 @@ hr {
     display:block;
     content: '';
     border-bottom: solid 3px #fff;
-    transform: scaleX(0);  
-    transition: transform 350ms ease-in-out;
-    transform-origin:50% 50%;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);  
+    -webkit-transition: -webkit-transform 350ms ease-in-out;  
+    transition: -webkit-transform 350ms ease-in-out;  
+    transition: transform 350ms ease-in-out;  
+    transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+    -webkit-transform-origin:50% 50%;
+            transform-origin:50% 50%;
 }
 .portfolio-box:hover > .image-box span a:hover:after { 
-    transform: scaleX(1);
-    transform-origin:0% 100%;
+    -webkit-transform: scaleX(1); 
+            transform: scaleX(1);
+    -webkit-transform-origin:0% 100%;
+            transform-origin:0% 100%;
     border-color: #fff;
 }
 
 .portfolio-box:hover > .image-box span a {
     color: green;
+    font-size: 25.6px;
     font-size: 1.6rem;
     background: #fff;
     border: 1px solid #ccc;
 }
 
 .portfolio-box:hover > .image-box img{
-    -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 
 .portfolio-box:hover > .image-box span{
     color: blue;
+    font-size: 24px;
     font-size: 1.5rem;
 }
 
@@ -808,6 +955,7 @@ hr {
 
 .portfolio-box p {
     line-height: 1.5;
+    font-size: 22.4px;
     font-size: 1.4rem;
     font-weight: 500;
 }
@@ -817,6 +965,7 @@ hr {
 }
 
 .portfolio-box-text p {
+    font-size: 20.8px;
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1.4;
@@ -830,7 +979,10 @@ hr {
 
 @media only screen and (max-width: 1200px) {
     .portfolio-box {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 100%;
     }
 }
@@ -862,16 +1014,22 @@ hr {
 }
 
 .contact header h1 {
+    font-size: 96px;
     font-size: 6rem;
 }
 
 .contact header h3 {
+    font-size: 48px;
     font-size: 3rem;
 }
 
 /* CONTACT FORM */
 
 .contact-container {
+    background: -webkit-linear-gradient( 
+    rgba(0,0, 0, 0.5)
+  , rgba(0, 0, 0, 0.35)
+   );
     background: linear-gradient( 
     rgba(0,0, 0, 0.5)
   , rgba(0, 0, 0, 0.35)
@@ -891,6 +1049,7 @@ hr {
 }
 
 .contact-container h2 {
+    font-size: 48px;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 25px;
@@ -912,11 +1071,13 @@ input[type=text], select, textarea {
 }
 
 .contact-container label {
+    font-size: 24px;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 .contact-container input[type=submit] {
+    font-size: 32px;
     font-size: 2rem;
     background-color: green;
     padding: 10px;
@@ -941,10 +1102,19 @@ input[type=text], select, textarea {
 footer {
     height: 75px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-left: 10%;
     background: #DCE2E3;
     color: #fff;
