@@ -585,7 +585,7 @@ button:active {
     text-shadow: -.5px 0 #000, 0 .5px #000, .5px 0 #000, 0 -.5px #000;
 }
 
-#service-info-right span {
+#service-info-right p {
     font-weight: 200;
     font-size: 1.3rem;
     font-family: 'Source Sans Pro', sans-serif;
