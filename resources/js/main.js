@@ -14,16 +14,24 @@ return false;});
 
 $(document).ready(function(){
   $('.carousel').slick({
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    draggable: false,
-    pauseOnFocus: false,
-    pauseOnHover: false
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      draggable: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      touchMove: false,
+      swipetoSlide: false,
+      swipe: false,
+      fade: true,
+      speed: 1500,
+      
+      
   });
     
-    $('#arrow-down').click(function (){
+    $('.navbar .nav > li:first-child > a').click(function(){
+        $('.navbar-nav:first-child').addClass('nav-normal')
     });
 });
 

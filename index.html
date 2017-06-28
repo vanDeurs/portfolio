@@ -34,29 +34,28 @@
         </div>
         
         <!-- NAVBAR -->
-        <nav class="navbar navbar-inverse fixed-top">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default fixed-top" role="navigation">
             <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                  </button>
-                  <a class="navbar-brand" href="#home">CharlesvanDeurs</a>
+                <div class="navbar-header"><a class="navbar-brand" href="#">Charles van Deurs</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="collapse navbar-collapse navbar-menubuilder">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#portfolio">Resume</a></li>
+                        <li><a class="active" href="#home">Home</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li><a href="#service">Service</a>
+                        </li>
+                        <li><a href="#portfolio">Resume</a>
+                        </li>
+                        <li><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
                 
             <!-- LANDING PAGE -->
         <div class="landing-page">
@@ -75,10 +74,10 @@
                 <h4>Hello! My name is</h4>
                 <h1>Alexander Wilson van Deurs</h1>
                 <h4>I am a web developer who makes <br /> <span>clean</span>, <span>elegant</span> and <span>creative</span> looking websites.</h4>
-                <button type="button" class="hire-button">Hire me to build your website!</button>
+                <button type="button" class="hire-button"><p>Contact me, let's start!</p></button>
                 <!--<img class="bounce" src="resources/pictures/down-chevron.svg" alt="arrow-down"/>-->
                 <a href="#about" class="bounce"></a>
-            </div>S
+            </div>
         </div>
         <!-- ABOUT PAGE -->
         <div class="site-wrapper" id="about">
