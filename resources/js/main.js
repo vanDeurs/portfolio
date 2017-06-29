@@ -29,10 +29,6 @@ $(document).ready(function(){
       
       
   });
-    
-    $('.navbar .nav > li:first-child > a').click(function(){
-        $('.navbar-nav:first-child').addClass('nav-normal')
-    });
 });
 
 

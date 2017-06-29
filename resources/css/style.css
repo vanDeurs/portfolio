@@ -47,10 +47,6 @@ body {
 
 /* TOP NAVBAR */
 
-.nav-normal {
-    color: red;
-}
-
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(224, 224, 224, 1);
 }
