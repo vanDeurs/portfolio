@@ -34,29 +34,28 @@
         </div>
         
         <!-- NAVBAR -->
-        <nav class="navbar navbar-inverse fixed-top">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default fixed-top" role="navigation">
             <div class="container-fluid">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                  </button>
-                  <a class="navbar-brand" href="#home">CharlesvanDeurs</a>
+                <div class="navbar-header"><a class="navbar-brand" href="#">Charles van Deurs</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
+                <div class="collapse navbar-collapse navbar-menubuilder">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#portfolio">Resume</a></li>
+                        <li><a class="active" href="#home">Home</a>
+                        </li>
+                        <li><a href="#about">About</a>
+                        </li>
+                        <li><a href="#service">Service</a>
+                        </li>
+                        <li><a href="#portfolio">Resume</a>
+                        </li>
+                        <li><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </div>
                 
             <!-- LANDING PAGE -->
         <div class="landing-page">
@@ -75,7 +74,7 @@
                 <h4>Hello! My name is</h4>
                 <h1>Alexander Wilson van Deurs</h1>
                 <h4>I am a web developer who makes <br /> <span>clean</span>, <span>elegant</span> and <span>creative</span> looking websites.</h4>
-                <button type="button" class="hire-button"><p>Hire me to build your website!</p></button>
+                <button type="button" class="hire-button"><p>Contact me, let's start!</p></button>
                 <!--<img class="bounce" src="resources/pictures/down-chevron.svg" alt="arrow-down"/>-->
                 <a href="#about" class="bounce"></a>
             </div>
@@ -102,7 +101,7 @@
                                 <div class="about-top">
                                     <div class="about-info-box">
                                         <img src="resources/pictures/business-person-silhouette-wearing-tie.svg" alt="man-icon"/>
-                                        <div class="info-box-text" id="home">
+                                        <div class="info-box-text">
                                             <h3>Name:</h3>
                                             <h5>Alexander Charles Michael Wilson van Deurs</h5>
                                         </div>
@@ -180,17 +179,17 @@
                                 <h1>I can provide: </h1>
                                 <ul>
                                     <li>Search Engine Optimization</li>
-                                    <span>I will through a various of techniques and methods increase the amount of visitors to your website by obtaining a high-ranking placement in the search results page of a search engine.</span>
+                                    <p>I will through a various of techniques and methods increase the amount of visitors to your website by obtaining a high-ranking placement in the search results page of a search engine.</p>
                                     <li>A Responsive Design</li>
-                                    <span>It doesn't matter what device or screen you're on, your website will always look neat and clean.</span>
+                                    <p>It doesn't matter what device or screen you're on, your website will always look neat and clean.</p>
                                     <li>A Fully Interactive Website</li>
-                                    <span>This means that your website won't be static - It will have animations, hovering affects and lots more to make your website even more attractive to visitors.</span>
+                                    <p>This means that your website won't be static - It will have animations, hovering affects and lots more to make your website even more attractive to visitors.</p>
                                     <li>Browser Compatibility</li>
-                                    <span>Today there are numerous different web browsers out there, and they're are all a bit different, making it very hard for us developers to make sure our website is good on all of them. I will, using code and techniques, make sure that your website is available to as many as possible, non-regarding their web browser. </span>
+                                    <p>Today there are numerous different web browsers out there, and they're are all a bit different, making it very hard for us developers to make sure our website is good on all of them. I will, using code and techniques, make sure that your website is available to as many as possible, non-regarding their web browser. </p>
                                     <li>The Latest technologies</li>
-                                    <span>I always use the latest technologies and keep my code very clean, making future updates very easy and cheap to implement.</span>
+                                    <p>I always use the latest technologies and keep my code very clean, making future updates very easy and cheap to implement.</p>
                                     <li>Website Updates.</li>
-                                    <span id="no-border">If you've been a client of mine, I will provide a very cheap update in the future if you wish for it. Even websites need updates once in a while.</span>
+                                    <p id="no-border">If you've been a client of mine, I will provide a very cheap update in the future if you wish for it. Even websites need updates once in a while.</p>
                                 </ul>
                             </div>
                         </div>
@@ -272,7 +271,7 @@
                         <h1>Contact</h1>
                     </header>
                     
-                <div id="contact" class="contact-container">
+                <div class="contact-container">
                     <form method="post" action="index.php">
                         <h2>Get it touch!</h2>
                         <label for="fname">Name*</label>
@@ -284,7 +283,7 @@
                         <label for="subject">Message*</label>
                         <textarea id="message" name="message" placeholder="Message.."></textarea>
                         
-                        <input id="submit" name="submit"type="submit" value="Submit">
+                        <input id="submit" name="submit" type="submit" value="Submit">
                     </form>
                 </div>
                     

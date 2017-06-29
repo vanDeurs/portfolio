@@ -47,12 +47,67 @@ body {
 
 /* TOP NAVBAR */
 
+.nav-normal {
+    color: red;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(224, 224, 224, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 17px;
+    background-color: rgba(7, 203, 121, 1);
+    background: -webkit-linear-gradient(top, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 1) 100%);
+    background: linear-gradient(to bottom, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 1) 100%);
+    border-bottom-width: 1px;
+    border-bottom-color: #f3f3f3;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(252, 252, 252, 1);
+    border-left: 1px solid transparent;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: #07cb79;
+    background-color: rgba(248, 248, 248, 1);
+    border-left: 1px solid #07cb79;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(7, 203, 121, 1);
+    background-color: rgba(242, 242, 242, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #f2f2f2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #f2f2f2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f2f2f2;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #07cb79;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a.active {
+    background-color: rgba(248, 248, 248, 1);
+    color: #07cb79;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a.active:hover {
+    color: #07cb79;
+}
+
 .fixed-top {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 999;
+    border-radius: 0;
 }
 /* LANDING PAGE */
 
@@ -79,7 +134,7 @@ body {
     position: relative;
     width: 100%;
     text-align: center;
-    top: -80%;
+    top: -600px;
 }
 
 .text-landing img {
@@ -133,16 +188,16 @@ a.bounce:hover {
         font-size: 1rem;
         padding: 5px 7px;
     }
-    .text-landing img {
-        top: 120px;
-    }
 }
 
 @media only screen and (max-width: 338px ){ 
-    button p {
+    button {
         font-size: .8rem;
-        padding: 1px 3px;
-    }   
+        padding: 0;
+    }
+    button p {
+        font-size: 1rem;
+    }
 }
 
 
@@ -155,7 +210,7 @@ a.bounce:hover {
 }
 
 .jumbotron {
-    height: 100vh;
+    min-height: 100vh;
     top: 0;
     position: relative;
     text-align: center;
@@ -189,34 +244,33 @@ a.bounce:hover {
 /* BUTTON */
 
 button {
-    padding: 10px 15px;
-    margin-top: 15px;
+    padding: 5px 8px;
+    margin-top: 25px;
     -webkit-transition: .15s ease-in-out;
     transition: .15s ease-in-out;
-    text-transform:capitalize;
     max-width: 90%;
-    background: #4CFF51;
-    color: rgba(255,255,255,1);
     border-radius: 10px;
-    font-size: 28.8px;
-    font-size: 1.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
     text-shadow: -.8px 0 #000, 0 .8px #000, .8px 0 #000, 0 -.8px #000;
     position: relative;
     box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
+    background-color: #07cb79;
+    
+}
+
+button p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    
 }
 
 button:hover {
-    margin-top: 10px;
-    box-shadow: -6px 9px 9px 0px rgba(0,0,0,0.65);
-    text-shadow: -1.3px 0 #000, 0 1.3px #000, 1.3px 0 #000, 0 -1.3px #000;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+    margin-top: 27px;
 }
 
 button:active {
-    margin-top: 15px;
-    box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.65);
-    
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    margin-top: 28px;
 }
 
 
@@ -690,7 +744,7 @@ button:active {
     text-shadow: -.5px 0 #000, 0 .5px #000, .5px 0 #000, 0 -.5px #000;
 }
 
-#service-info-right span {
+#service-info-right p {
     font-weight: 200;
     font-size: 20.8px;
     font-size: 1.3rem;
