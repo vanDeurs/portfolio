@@ -396,17 +396,11 @@ button:active {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 100%;
+    max-width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
 }
 .about-info-box {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
