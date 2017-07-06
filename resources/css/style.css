@@ -516,6 +516,7 @@ button:active {
     color: #DCE2E3;
     line-height: 1.4;
     font-weight: 500;
+    text-align: left;
 }
 
 @media only screen and (max-width: 955px) {
@@ -796,6 +797,7 @@ button:active {
     padding-bottom: 15px;
     border-bottom: 1px solid grey;
     text-shadow: none;
+    text-align: left;
 }
 
 #service-info-right #no-border {
@@ -961,9 +963,10 @@ hr {
     -o-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
     text-shadow: none;
+    text-align: left;
 }
 
-.image-box span a {
+.image-box a {
     font-size: 22.4px;
     font-size: 1.4rem;
     color: transparent;
@@ -1045,8 +1048,8 @@ hr {
     border-radius: 20px;
     background: #fff;
     max-height: 350px;
-    height: 350px;
     border: 1px solid grey;
+    padding: 20px 10px;
 }
 
 #portfolio-info p {
@@ -1054,6 +1057,7 @@ hr {
     padding: 2% 3%;
     color: rgba(0,0,0,.6);
     font-weight: 600;
+    text-align: left;
 }
 
 .portfolio-box p {
@@ -1099,7 +1103,21 @@ hr {
         font-size: 1.1rem;
     }
     #portfolio-info p {
-        padding: .3% .5%;
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 725px) { 
+    .image-box span {
+        font-size: 1.1rem;
+        line-height: 1.25;
+    }
+}
+
+@media only screen and (max-width: 625px) { 
+    .image-box span {
+        font-size: .7rem;
+        line-height: 1;
     }
 }
 
