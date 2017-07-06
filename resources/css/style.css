@@ -135,19 +135,19 @@ body {
     top: -700px;
 }
 
-@media only screen and (max-width: 1500px ){ 
+@media only screen and (max-width: 1700px ){ 
     .text-landing {
-        top: -680px;
+        top: -600px;
     }   
 }
 
 @media only screen and (max-width: 1100px ){ 
     .text-landing {
-        top: -650px;
+        top: -900px;
     }   
 }
 
-@media only screen and (max-width: 700px ){ 
+@media only screen and (max-width: 768px ){ 
     .text-landing {
         top: -650px;
     }   
@@ -161,7 +161,7 @@ body {
 
 @media only screen and (max-width: 400px ){ 
     .text-landing {
-        top: -530px;
+        top: -500px;
     }   
 }
 
