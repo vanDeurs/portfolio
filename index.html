@@ -14,6 +14,9 @@
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:500i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
       <!-- META TAGS -->
       <meta name="author" content="Alexander Wilson van Deurs">
       <meta name="keywords" content="freelancer, web developer">
@@ -27,11 +30,11 @@
     </head>
     <body id="home">
         <!-- PRE-LOADER -->
-        <div id="loader-wrapper">
+        <!--<div id="loader-wrapper">
             <div id="loader"></div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-        </div>
+        </div>-->
         
         <!-- NAVBAR -->
         <div id="custom-bootstrap-menu" class="navbar navbar-default fixed-top" role="navigation">
@@ -48,7 +51,7 @@
                         </li>
                         <li><a href="#service">Service</a>
                         </li>
-                        <li><a href="#portfolio">Resume</a>
+                        <li><a href="#portfolio">Portfolio</a>
                         </li>
                         <li><a href="#contact"><span class="glyphicon glyphicon-user"></span>Contact</a>
                         </li>
@@ -59,24 +62,11 @@
                 
             <!-- LANDING PAGE -->
         <div class="landing-page">
-            <div class="carousel">
-                <div class="jumbotron background-bike">
-                </div>
-                <div class="jumbotron background-beer">
-                </div>
-                <div class="jumbotron background-flowers">
-                </div>
-                <div class="jumbotron background-duffel">
-                </div>
-            </div>
-
             <div class="text-landing">
-                <h4>Hello! My name is</h4>
+                <h3>Hi! I'm</h3>
                 <h1>Alexander Wilson van Deurs</h1>
-                <h4>I am a web developer who makes <br /> <span>clean</span>, <span>elegant</span> and <span>creative</span> looking websites.</h4>
-                <button type="button" class="hire-button"><a href="#contact">Contact me, let's start!</a></button>
-                <!--<img class="bounce" src="resources/pictures/down-chevron.svg" alt="arrow-down"/>-->
-                <a href="#about" class="bounce"></a>
+                <h5>I am a web developer who creates customized,</h5> 
+                <h5>professional websites</h5>
             </div>
         </div>
         <!-- ABOUT PAGE -->
@@ -199,105 +189,91 @@
                 </div>
             </div>
         </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title">Gallery</h1>
+                </div>
+
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-default filter-button" data-filter="hdpe">Portfolios</button>
+                    <button class="btn btn-default filter-button" data-filter="sprinkle">Blogs</button>
+                    <button class="btn btn-default filter-button" data-filter="spray">Marketing</button>
+                    <button class="btn btn-default filter-button" data-filter="irrigation">Product</button>
+                </div>
+                <br/>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
+                    <img src="/resources/pictures/fotomatic.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter sprinkle">
+                    <img src="/resources/pictures/colmar.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
+                    <img src="/resources/pictures/marocco.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
+                    <img src="/resources/pictures/tea-cozy.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
+                    <img src="/resources/pictures/landing-portfolio.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter sprinkle">
+                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                </div>
+            </div>
+        </div>
+
 
                 <!-- PORTFOLIO PAGE -->
-
-        <div class="site-wrapper" id="portfolio">
-            <div class="site-wrapper-inner">
-                <div class="portfolio">
-                    <h1>Resume</h1>
-                    <div class="portfolio-boxes">
-                        <div class="portfolio-box" id="portfolio-info">
-                            <p>This is a showcase of websites I have built completely from scratch. Feel free to have a look around. Many of them are websites I have built for imaginary companies as I way to practise my development skills. They all have a responsive design with different types of layouts and themes.</p>
+        
+        <footer>
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="footer-text">
+                            <p>Copyright All Content &copy; 2017 Alexander Wilson van Deurs</p>
                         </div>
-                        <div class="portfolio-box">
-                            <div class="image-box">
-                                <img src="./resources/pictures/tea-cozy.jpg" alt="Website I have built.">
-                                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minieiusmod tempor incididunt ut labor.
-                                <br /><a href="https://vandeurs.github.io/tea-cozy-codecademy/." target="_blank">Visit the website</a></span>
-                            </div>
-                            <div class="portfolio-box-text">
-                                <p>Tea Cozy</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-box">
-                            <div class="image-box">
-                                <img src="./resources/pictures/fotomatic.jpg" alt="Website I have built.">
-                                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minieiusmod tempor incididunt ut labor.<br /><a href="https://vandeurs.github.io/fotomatic/." target="_blank">Visit the website</a></span>
-                            </div>
-                            <div class="portfolio-box-text">
-                                <p>Fotomatic Inc.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="portfolio-box">
-                            <div class="image-box">
-                                <img src="./resources/pictures/marocco.jpg" alt="Website I have built.">
-                                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minieiusmod tempor incididunt ut labor.<br /><a href="https://vandeurs.github.io/Blade/." target="_blank">Visit the website</a></span>
-                            </div>
-                            <div class="portfolio-box-text">
-                                <p>Marocco</p>
-                            </div>
-                        </div>
-                        
-                        <div class="portfolio-box">
-                            <div class="image-box">
-                                <img src="./resources/pictures/landing-portfolio.jpg" alt="Website I have built.">
-                                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minieiusmod tempor incididunt ut labor.<br /><a href="https://vandeurs.github.io/portfolio-landingpage/." target="_blank">Visit the website</a></span>
-                            </div>
-                            <div class="portfolio-box-text">
-                                <p>Landing Page</p>
-                            </div>
-                        </div>
-                        <div class="portfolio-box">
-                            <div class="image-box">
-                                <img src="./resources/pictures/colmar.jpg" alt="Website I have built.">
-                                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minieiusmod tempor incididunt ut labor.<br /><a href="#">Visit the website</a></span>
-                            </div>
-                            <div class="portfolio-box-text">
-                                <p>Colmar Academy</p>
-                            </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="social-media">
+                            <a href="https://facebook.com"><img src="resources/pictures/facebook.svg"/></a>
+                            <a href="https://facebook.com"><img src="resources/pictures/facebook.svg"/></a>
+                            <a href="https://facebook.com"><img src="resources/pictures/facebook.svg"/></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- CONTACT PAGE -->
-        <div class="site-wrapper" id="contact">
-            <div class="site-wrapper-inner">
-                <div class="contact">
-                    <header>
-                        <h1>Contact</h1>
-                    </header>
-                    
-                <div class="contact-container">
-                    <form method="post" action="index.php">
-                        <h2>Get it touch!</h2>
-                        <label for="fname">Name*</label>
-                        <input type="text" id="name" name="name" placeholder="Name..">
-                        
-                        <label for="lname">Email*</label>
-                        <input type="text" id="email" name="email" placeholder="Email..">
-                        
-                        <label for="subject">Message*</label>
-                        <textarea id="message" name="message" placeholder="Message.."></textarea>
-                        
-                        <input id="submit" name="submit" type="submit" value="Submit">
-                    </form>
-                </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        
-        <!-- FOOTER PAGE -->
-        
-        <footer>
-            
-        
         </footer>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>

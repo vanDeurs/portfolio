@@ -10,25 +10,31 @@ var the_id = $(this).attr("href");
 
 return false;});
 
-// Carousel function
 
-$(document).ready(function(){
-  $('.carousel').slick({
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      arrows: false,
-      draggable: false,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      touchMove: false,
-      swipetoSlide: false,
-      swipe: false,
-      fade: true,
-      speed: 1500,
-      
-      
-  });
+
+// Portfolio sorter
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+
+    }
 });
+
+if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+}
+$(this).addClass("active");
+
 
 
