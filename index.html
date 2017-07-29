@@ -65,10 +65,12 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 align-middle text-landing">
-                        <h3>Hi! I'm</h3>
-                        <h1>Alexander Wilson van Deurs</h1>
-                        <h5>I am a web developer who creates customized,</h5> 
-                        <h5>professional websites</h5>
+                        <div class="header-text">
+                            <h3>Hi! I'm</h3>
+                            <h1>Alexander Wilson van Deurs</h1>
+                            <h5>I am a web developer who creates customized,</h5> 
+                            <h5>professional websites</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,11 +86,6 @@
                         <div class="about-main">
                             <div class="image-container">
                                 <img src="resources/pictures/DSC_0191.JPG" alt="picture or Alexander Wilson van Deurs">
-                                <div class="social">
-                                    <a href="#"><img src="resources/pictures/instagram-photo-camera-logo-outline.svg" alt="instagram-logo"/></a>
-                                    <a href="#"><img src="resources/pictures/facebook.svg" alt="instagram-logo"/></a>
-                                    <a href="#"><img src="resources/pictures/linkedin.svg" alt="instagram-logo"/></a>
-                                </div>
                             </div>
 
                             <div class="about-info">
@@ -138,7 +135,7 @@
                                 </div>
 
                                 <div class="about-text">
-                                    <p>Hi, my name is Alexander Wilson van Deurs. I know, quite a long name. I am a freelance web developer and student, currently working and studying in Stockholm, Sweden. I have been programming since I was 14 years old, but my interest for tech and development started long before that. Developing, tweaking and producing elegant, clean and most important of all - creative websites is my passion. Perfection is key if you want to make something extraordinary, and that is something I always have in mind when coming up with a design, layout and finally writing the code itself. If you want something, I can make it happen for you.</p>
+                                    <p>Hi, my name is Alexander Wilson van Deurs. I know, quite a long name. I am a freelance web developer living in Stockholm, Sweden. I have been programming since I was 14 years old, and I've always had an eye for perfection and design. Perfection is key if you want to make something extraordinary, and that is something I always have in mind when coming up with a design, layout and finally writing the code itself. If you want something, I can make it happen for you.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +163,7 @@
                                 <p>My field is designing, programming and producing clean, creative and fully interactive websites.<br />You can approach me with just a simple idea of a website, and together we'll come up with a design, layout and content suitable for your specific needs.
                                 Otherwise, if you already have the design or an idea on how you want your website to look, contact me with that information and I'll simply develop it right away.</p><hr><p>
                                 My job is helping people and companies grow their businnes through web development. This means that my goal won't just be to produce a beautiful and well functioning website for you, it will be to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience. That is what you're paying me for; to help grow your businnes - through web development.</p><hr>
-                                <p>Finding and trusting someone to do your work is hard. You can go all over the internet and find someone who could do the work for you in just a couple of days for a cheap price, but the quality will suffer, deeply. And that is the most important aspect of a website, it's quality. As I student, I do most of my work for an extremely cheap price, in return for experience.  </p>
+                                <p>Finding and trusting someone to do your work is hard. You can go all over the internet and find someone who could do the work for you in just a couple of days for a cheap price, but the quality will suffer, deeply. And that is the most important aspect of a website, it's quality. As I student, I do most of my work for a cheap price, in return for experience.  </p>
 
                             </div>
                             <div id="service-info-right">
@@ -193,69 +190,122 @@
             </div>
         </div>
         
-        <div class="container">
+        <div class="container-fluid" id="portfolio">
             <div class="row">
-                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h1 class="gallery-title">Gallery</h1>
+                <div class="col-xs-12 portfolio-title">
+                    <div class="title-text">
+                        <h1>This is a collection of recent project I have developed to practise my skills.</h1>
+                    </div>
+                
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/colmar.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Colmar Academy
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                 <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/tea-cozy.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Tea Cozy
+                                </div>
+                                   <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                 <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/fotomatic.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Fotomatic
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                 <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/landing-portfolio.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Landing Page (Portfolio)
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
-                <div align="center">
-                    <button class="btn btn-default filter-button" data-filter="all">All</button>
-                    <button class="btn btn-default filter-button" data-filter="hdpe">Portfolios</button>
-                    <button class="btn btn-default filter-button" data-filter="sprinkle">Blogs</button>
-                    <button class="btn btn-default filter-button" data-filter="spray">Marketing</button>
-                    <button class="btn btn-default filter-button" data-filter="irrigation">Product</button>
+                 <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/marocco.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Marocco
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <br/>
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
-                    <img src="/resources/pictures/fotomatic.jpg" class="img-responsive">
+                
+                 <div class="col-lg-4 col-sm-6">
+                        <img src="/resources/pictures/fotomatic.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    ----
+                                </div>
+                                <div class="project-link">
+                                    <a href="#" class="expand-right">Visit Project</a>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter sprinkle">
-                    <img src="/resources/pictures/colmar.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
-                    <img src="/resources/pictures/marocco.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
-                    <img src="/resources/pictures/tea-cozy.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
-                    <img src="/resources/pictures/landing-portfolio.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter irrigation">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter hdpe">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter spray">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-12 filter sprinkle">
-                    <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                </div>
+                
             </div>
         </div>
+        
+        <!-- CONTACT PAGE -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center contact">
+                        <h3>Let's Get In Touch!</h3>
+                        <hr>
+                        <p class="contact-p">Ready to start your next project with me? That's great! Give me a call or send me an email I will get back to you as soon as possible!</p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                        <img src="resources/pictures/mail.svg" class="contact-icon" alt="mail-icon">
+                        <p class="contact-p">076 191 83 24</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <img src="resources/pictures/mail.svg" class="contact-icon" alt="mail-icon">
+                        <p class="contact-p"><a href="mailto:alexwvd@outlook.com">alexwvd@outlook.com</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
 
 
                 <!-- PORTFOLIO PAGE -->
