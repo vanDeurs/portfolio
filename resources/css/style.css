@@ -26,6 +26,14 @@ h1,h2,h3,h4,h5,h6,p,li,span {
     padding: 0;
 }
 
+/* Animations */
+ 
+.animated,.slideInLeft {
+    padding: 0;
+    margin: 0;
+    top: 0;
+}
+
 .col-xs-12 {
     padding: 0;
 }
@@ -51,23 +59,21 @@ body {
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 17px;
-    background-color: rgba(7, 203, 121, 1);
-    background: -webkit-linear-gradient(top, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 230, 126, 1)), to(rgba(7, 203, 121, 1)));
-    background: -o-linear-gradient(top, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 1) 100%);
-    background: linear-gradient(to bottom, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 1) 100%);
+    background-color: rgba(7, 203, 121, 0);
+    background: -webkit-linear-gradient(top, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 0) 0%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 230, 126, 0)), to(rgba(7, 203, 121, 1)));
+    background: -o-linear-gradient(top, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 0) 0%);
+    background: linear-gradient(to bottom, rgba(28, 230, 126, 1) 0%, rgba(7, 203, 121, 0) 0%);
     border-bottom-width: 1px;
     border-bottom-color: #f3f3f3;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(252, 252, 252, 1);
-    border-left: 1px solid transparent;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: #07cb79;
     background-color: rgba(248, 248, 248, 1);
-    border-left: 1px solid #07cb79;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
@@ -75,8 +81,16 @@ body {
     color: rgba(7, 203, 121, 1);
     background-color: rgba(242, 242, 242, 1);
 }
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #f2f2f2;
+
+.navbar-default {
+    border: 0;
+    border-bottom: 1px solid red;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
