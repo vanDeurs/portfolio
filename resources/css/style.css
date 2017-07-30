@@ -26,6 +26,10 @@ h1,h2,h3,h4,h5,h6,p,li,span {
     padding: 0;
 }
 
+.col-xs-12 {
+    padding: 0;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -111,7 +115,7 @@ body {
 
 .text-landing {
     background: rgba(0,0,0,.7);
-    height: 800px;
+    height: 100vh;
     line-height: 1.4;
 }
 
@@ -125,7 +129,8 @@ body {
 
 .text-landing h5 {
     font-size: 3rem;
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 .text-landing h3 {
@@ -800,7 +805,12 @@ p.contact-p {
     height: 50px;
     width: 50px;
 }
-
+@media only screen and (max-width: 400px) {
+    img.contact-icon {
+        margin-top: 20px;
+    
+    }
+}
 /* FOOTER */
 
 .footer {
