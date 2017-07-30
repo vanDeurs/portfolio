@@ -1,3 +1,14 @@
+// PRE LOADER
+
+$(document).ready(function() {
+	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 3000);
+	
+});
+
+
 // Sliding down and up when clicking to different parts of the page
 
 $('a[href^="#"]').click(function () {
@@ -68,3 +79,41 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+/* MENU SCROLL */
+
+ $('#navbar,#scroll-down').on( "click", function(e) {
+     if ( $(e.target).is('a.page-scroll') ) {
+       if (location.pathname.replace(/^\//,'') == e.target.pathname.replace(/^\//,'') && location.hostname == e.target.hostname) {
+          var target = $(e.target.hash);
+            target = target.length ? target : $('[name=' + e.target.hash.slice(1) +']');
+          if (target.length) {
+        var gap = 75;
+        if ($('.navbar-default').hasClass('no-sticky')) { 
+            gap = 0;
+         }      
+        $('html,body').animate({
+          scrollTop: target.offset().top - gap
+        }, 900);
+         }
+         if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+          }
+        }
+        return false;
+       }
+      });
+     $(window).scroll(function () {
+   if (!$('.navbar-default').hasClass('no-sticky')) {
+        if ($(this).scrollTop() > 10) {      
+            $('.navbar-default').addClass('sticky');
+           }
+         else {
+            $('.navbar-default').removeClass('sticky');
+        }
+      }
+   });
+   $('body').scrollspy({ 
+        target: '.navbar-default',
+        offset: 80
+    })
