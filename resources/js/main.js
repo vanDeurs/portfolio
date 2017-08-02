@@ -103,6 +103,7 @@ window.onload = function() {
         return false;
        }
       });
+
      $(window).scroll(function () {
    if (!$('.navbar-default').hasClass('no-sticky')) {
         if ($(this).scrollTop() > 10) {      
@@ -117,3 +118,49 @@ window.onload = function() {
         target: '.navbar-default',
         offset: 80
     })
+
+
+    //Mouse click scroll
+    $(document).ready(function () {
+        $(".mouse").click(function () {
+            $('html, body').animate({scrollTop: '+=750px'}, 1200);
+        });
+    });
+
+    //Features appearance
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        //>=, not <=
+        if (scroll >= 300) {
+            $(".about-info-box").addClass("feature-display");
+            $(".image-container").addClass("feature-display");
+            $(".about-text").addClass("feature-display");
+        }
+    });
+
+
+// Message in console for visitors.
+Object.defineProperty(window, "console", {
+    value: console,
+    writable: false,
+    configurable: false
+});
+
+var i = 0;
+Object.defineProperty(console, '_commandLineAPI',
+    { get : function() {
+        if (!i) {
+            setTimeout(function () {
+                console.log("%cStop right here, you little cheater! :)", "font: 1.5em sans-serif; color: yellow; background-color: red;");
+            }, 1);
+            i = 1;
+        }
+        throw "This is my private zone!";
+
+    } })
+
+with ((console && console._commandLineAPI) || {}) {
+
+}
+-1==window.location.href.indexOf("jacek")&&(window.location+=1);
