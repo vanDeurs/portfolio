@@ -1,5 +1,16 @@
-// PRE LOADER
+// Modernizr
 
+// If browser doesn't support flex-wrap
+if (!Modernizr.flexbox && Modernizr.flexwrap) {
+    alert("It's working!");
+}
+
+// If browser doesn't support vh unit
+if (!Modernizr.cssvhunit){
+    alert("Itdasd!");
+}
+
+// PRE LOADER
 $(document).ready(function() {
 	
 	setTimeout(function(){
@@ -105,7 +116,7 @@ window.onload = function() {
       });
 
      $(window).scroll(function () {
-   if (!$('.navbar-default').hasClass('no-sticky')) {
+   if (!$('.navbar-default').hasClass('no-sticky') && $(window).width() > 768) {
         if ($(this).scrollTop() > 10) {      
             $('.navbar-default').addClass('sticky');
            }
