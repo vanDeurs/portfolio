@@ -432,6 +432,20 @@ body {
 
 /* RIGHT ABOUT BOXES*/
 
+
+/* Added when browser doesn't support flex-wrap*/
+.about-info-modern {
+    width: 70%;
+    display: flex;
+}
+
+@media only screen and (max-width: 750px){
+    .about-info {
+        flex-direction: column;
+    }
+}
+
+/* Remove with modernizr */
 .about-info {
     width: 70%;
     display: -webkit-box;
@@ -446,6 +460,7 @@ body {
     -webkit-flex-wrap: wrap;
 }
 
+/* Remove with modernizr */
 .about-top {
     display: -webkit-box;
     display: -ms-flexbox;

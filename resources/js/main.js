@@ -1,8 +1,10 @@
 // Modernizr
 
 // If browser doesn't support flex-wrap
-if (!Modernizr.flexbox && Modernizr.flexwrap) {
-    alert("It's working!");
+if (!Modernizr.flexbox && Modernizr.flexwrap){
+    document.getElementById("about-info1").classList.remove('about-info');
+    document.getElementById("about-info1").classList.add('about-info-modern');
+    document.getElementById("about-top1").classList.remove('about-top');
 }
 
 // If browser doesn't support vh unit
@@ -139,7 +141,7 @@ window.onload = function() {
     });
 
     //Features appearance
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         //>=, not <=
@@ -148,7 +150,7 @@ window.onload = function() {
             $(".image-container").addClass("feature-display");
             $(".about-text").addClass("feature-display");
         }
-    });
+    });*/
 
 
 // Message in console for visitors.
