@@ -9,7 +9,8 @@ if (!Modernizr.flexbox && Modernizr.flexwrap){
 
 // If browser doesn't support vh unit
 if (!Modernizr.cssvhunit){
-    alert("Itdasd!");
+    document.getElementById("text-landing").classList.remove('text-landing');
+    document.getElementById("text-landing").classList.add('text-landing-modern');
 }
 
 // PRE LOADER
@@ -17,10 +18,9 @@ $(document).ready(function() {
 	
 	setTimeout(function(){
 		$('body').addClass('loaded');
-	}, 3000);
+	}, 1000);
 	
 });
-
 
 // Sliding down and up when clicking to different parts of the page
 
@@ -29,10 +29,11 @@ $('a[href^="#"]').click(function () {
 var the_id = $(this).attr("href");
 
     $('html, body').animate({
-        scrollTop:$(the_id).offset().top
+        scrollTop:$(the_id).offset().top - 80
     }, 'slow');
 
 return false;});
+
 
 
 //HEADER TEXT TRANSFORMATION 
@@ -93,52 +94,16 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-/* MENU SCROLL */
-
- $('#navbar,#scroll-down').on( "click", function(e) {
-     if ( $(e.target).is('a.page-scroll') ) {
-       if (location.pathname.replace(/^\//,'') == e.target.pathname.replace(/^\//,'') && location.hostname == e.target.hostname) {
-          var target = $(e.target.hash);
-            target = target.length ? target : $('[name=' + e.target.hash.slice(1) +']');
-          if (target.length) {
-        var gap = 75;
-        if ($('.navbar-default').hasClass('no-sticky')) { 
-            gap = 0;
-         }      
-        $('html,body').animate({
-          scrollTop: target.offset().top - gap
-        }, 900);
-         }
-         if($('.navbar-toggle').css('display') !='none'){
-            $(".navbar-toggle").trigger( "click" );
-          }
-        }
-        return false;
-       }
-      });
-
-     $(window).scroll(function () {
-   if (!$('.navbar-default').hasClass('no-sticky') && $(window).width() > 768) {
+$(window).scroll(function () {
+    if (!$('.navbar-default').hasClass('no-sticky') && $(window).width() > 768) {
         if ($(this).scrollTop() > 10) {      
             $('.navbar-default').addClass('sticky');
-           }
-         else {
+        }
+        else {
             $('.navbar-default').removeClass('sticky');
         }
-      }
-   });
-   $('body').scrollspy({ 
-        target: '.navbar-default',
-        offset: 80
-    })
-
-
-    //Mouse click scroll
-    $(document).ready(function () {
-        $(".mouse").click(function () {
-            $('html, body').animate({scrollTop: '+=750px'}, 1200);
-        });
-    });
+    }
+});
 
     //Features appearance
     /*$(window).scroll(function () {
