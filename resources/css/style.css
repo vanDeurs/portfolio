@@ -194,6 +194,7 @@ body {
         background: #2f3742;
         padding: 0px 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        position: fixed;
     }
     .nav>li { 
         height: 50px;
@@ -374,10 +375,10 @@ body {
 .about {
     background: #202C3D;
     height: 100%;
-    padding-top: 3%;
     padding-bottom: 1%;
     position: relative;
     border-top: 1px solid #fff;
+    padding-top: 15px;
 }
 
 /* ABOUT HEADER */
@@ -418,13 +419,13 @@ body {
     height: 40%;
     margin: 0 2.5%;
     margin-bottom: 100px;
-    display: table-cell;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    display: block;
 }
 
 /* RIGHT ABOUT BOXES*/
@@ -617,7 +618,7 @@ body {
 }
 
 .service-text {
-    height: 150px;
+    min-height: 150px;
 }
 
 .service-text h1 {
@@ -634,8 +635,8 @@ body {
 }
 
 .service-box {
-    height: 450px;
     border-bottom: 1px solid #202C3D;
+    min-height: 350px;
 }
 
 .service-box img {
@@ -653,21 +654,67 @@ body {
     padding-top: 10px;
     display: inline-block;
     margin-left: 20px;
+    margin-top: 25px;
 }
 
 .service-box p {
     color: rgba(50,50,50,.7);
     font-size: 1.3rem;
     font-family: 'Open Sans', sans-serif;
-    padding: 25px 15px;
     line-height: 1.5;
-    border-right: 1px solid black;
-    height: 300px;
+    min-height: 250px;
+    padding: 20px 15px;
 }
 
 .service-box span {
     color: #202C3D;
     font-weight: 600;
+}
+
+.border-right {
+    border-right: 1px solid #000;
+}
+
+@media only screen and (max-width: 1196px){
+    .service-box {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width: 825px){
+    .service-box img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 825px){
+    .border-right {
+        border: none;
+    }
+}
+
+
+@media only screen and (max-width: 1135px){
+    .service-box img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .service-box p {
+        font-size: 1.2rem;
+        padding: 25px 20px;
+    }
+    .service-text h1 {
+        font-size: 4.4rem;
+    }
+    .service-text h3{
+        font-size: 1.3rem;
+    }
+    .service-text {
+        height: 100px;
+    }
+    
 }
 
 
@@ -687,9 +734,28 @@ hr {
     height: 375px;
 }
 
+#resume .col-xs-12{
+    float: none;
+    
+}
+
 .portfolio-title .title-text {
-    padding: 50px 0;
-    background: #333;
+    padding: 100px 0;
+    background: #2f3742;
+    display: block:
+}
+
+.portfolio-title .title-text h1 {
+    font-size: 2.2rem;
+    font-family: 'Open Sans',sans-serif;
+    letter-spacing: 1.1;
+}
+
+.portfolio-title .title-text h3{
+    font-size: 1.6rem;
+    letter-spacing: 1.1;
+    padding-top: 10px;
+    font-family: 'Raleway',sans-serif;
 }
 
 .col-sm-6 {
