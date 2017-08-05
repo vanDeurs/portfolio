@@ -225,21 +225,26 @@ body {
 .landing-page {
     background: url("../pictures/DSC_0327blur2.jpg");
     background-size: cover;
-    height: 100%;
     
 }
 
 
 .text-landing-modern {
     background: rgba(0,0,0,.7);
-    height: 700px;
+    height: 800px;
     line-height: 1.4;
 }
 .text-landing {
     background: rgba(0,0,0,.7);
-    height: 100%;
     height: 100vh;
     line-height: 1.4;
+}
+.header-text-modern {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
 }
 
 .header-text {
@@ -250,19 +255,19 @@ body {
     transform: translateY(-50%);
 }
 
-.header-text h5 {
+#header-text h5 {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
-.header-text h3 {
+#header-text h3 {
     font-size: 3.5rem;
     font-family: 'Bellefair', serif;
     margin: 0;
 }
 
-.header-text h1 {
+#header-text h1 {
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -313,10 +318,10 @@ body {
     .mouse {
         top: 90%;
     }
-    .header-text h1 {
+    #header-text h1 {
         padding: 0 10px;
     }
-    .header-text h5 {
+    #header-text h5 {
         padding: 0 2px;
         width: 100%;
     }
@@ -354,13 +359,13 @@ body {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 550px) {
-    .header-text h5 {
+    #header-text h5 {
         font-size: 2rem;
     }
-    .header-text h3 {
+    #header-text h3 {
         font-size: 2.5rem;
     }
-    .header-text h1 {
+    #header-text h1 {
         font-size: 4rem;
     }
     .hire-button {
