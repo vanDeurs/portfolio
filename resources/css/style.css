@@ -486,9 +486,10 @@ body {
     -ms-flex-pack: start;
     justify-content: flex-start;
     margin: .5% 0;
+    max-width: 33%;
     width: 33%;
     min-width: 270px;
-    -webkit-flex:1 1 auto;
+    -webkit-flex: 1 1 33%;
 }
 
 .info-box-text {
