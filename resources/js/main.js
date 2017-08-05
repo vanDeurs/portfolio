@@ -2,6 +2,7 @@
 
 // If browser doesn't support vh unit
 if (!Modernizr.cssvhunit){
+    alert("This browser doesn't support vh units");
     document.getElementById("text-landing").classList.remove('text-landing');
     document.getElementById("text-landing").classList.add('text-landing-modern');
 }

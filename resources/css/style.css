@@ -225,16 +225,19 @@ body {
 .landing-page {
     background: url("../pictures/DSC_0327blur2.jpg");
     background-size: cover;
+    height: 100%;
+    
 }
 
 
 .text-landing-modern {
     background: rgba(0,0,0,.7);
-    height: 900px;
+    height: 700px;
     line-height: 1.4;
 }
 .text-landing {
     background: rgba(0,0,0,.7);
+    height: 100%;
     height: 100vh;
     line-height: 1.4;
 }
@@ -474,11 +477,13 @@ body {
     min-width: 270px;
     margin-top: 30px;
     border-radius: 5px;
+    height: auto;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
