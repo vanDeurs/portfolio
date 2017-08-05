@@ -15,8 +15,6 @@ $(document).ready(function() {
 	
 });
 
-$('html').getNiceScroll().remove();
-
 // Sliding down and up when clicking to different parts of the page
 
 $('a[href^="#"]').click(function () {
