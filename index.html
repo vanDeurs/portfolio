@@ -29,11 +29,23 @@
     </head>
     <body id="home">
         <!-- PRE-LOADER -->
-        <!--<div id="loader-wrapper">
+        <div id="loader-wrapper">
             <div id="loader"></div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-        </div>-->
+        </div>
+        <script src="/resources/js/jquery.nicescroll.js"></script>
+        <script>
+            $("html").niceScroll({
+                cursorcolor: "#07cb79",
+                cursorwidth: "10px",
+                cursorborder: "1px solid #2f3742",
+                cursorborderradius: "5px",
+                scrollspeed: "30",
+                mousescrollstep: "40",
+                zindex: "999"
+            });
+        </script>
         
         <!-- NAVBAR -->
         <header class="header" id="home">
@@ -294,7 +306,7 @@
                     </div>
                     <div class="col-lg-4 col-lg-offset-2 text-center">
                         <img src="resources/pictures/phone-call.svg" class="contact-icon" alt="phone-icon">
-                        <p class="contact-p">076 191 83 24</p>
+                        <p class="contact-p">(+46)-76-191-8324</p>
                     </div>
                     <div class="col-lg-4 text-center">
                         <img src="resources/pictures/mail.svg" class="contact-icon contact-icon-2" alt="mail-icon">
@@ -329,7 +341,6 @@
 
         <script src="resources/js/modernizr.min.js"></script>
         <script src="./resources/js/main.js"></script>
-        <script src="resources/js/jquery.nicescroll.js"></script>
         
         <!-- modernizr -->
 

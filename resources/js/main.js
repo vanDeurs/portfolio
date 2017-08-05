@@ -14,7 +14,7 @@ if (!Modernizr.flexwrap){
 }
 
 // If browser doesn't support vh unit
-if (Modernizr.cssvhunit){
+if (!Modernizr.cssvhunit){
     document.getElementById("text-landing").classList.remove('text-landing');
     document.getElementById("text-landing").classList.add('text-landing-modern');
 }
