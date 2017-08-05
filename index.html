@@ -29,12 +29,12 @@
     </head>
     <body id="home">
         <!-- PRE-LOADER -->
-        <div id="loader-wrapper">
+        <!--<div id="loader-wrapper">
             <div id="loader"></div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-        </div>
-        <script src="/resources/js/jquery.nicescroll.js"></script>
+        </div>-->
+        <script class="nicescroll" src="/resources/js/jquery.nicescroll.js"></script>
         <script>
             $("html").niceScroll({
                 cursorcolor: "#07cb79",
@@ -93,71 +93,86 @@
         <!-- ABOUT PAGE -->
         <div class="site-wrapper" id="about">
             <div class="site-wrapper-inner">
-                <div class="about">
-                    <header>
-                        <h1>About me</h1>
-                        <h3>Let me introduce myself.</h3>
-                    </header>
-                        <div class="about-main">
-                            <div class="image-container">
-                                <img src="resources/pictures/DSC_0191.JPG" alt="picture or Alexander Wilson van Deurs">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="about">
+                            <header>
+                                <h1>About me</h1>
+                                <h3>Let me introduce myself.</h3>
+                            </header>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <div class="image-container">
+                                    <img src="resources/pictures/DSC_0191.JPG" alt="picture or Alexander Wilson van Deurs">
+                                </div>
                             </div>
-
-                            <div class="about-info" id="about-info1">
-                                <div class="about-top" id="about-top1">
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/business-person-silhouette-wearing-tie.svg" alt="man-icon"/>
-                                        <div class="info-box-text">
-                                            <h3>Name:</h3>
-                                            <h5>Alexander Wilson van Deurs</h5>
+                            <div class="contact-block">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/business-person-silhouette-wearing-tie.svg" alt=""/>
+                                            <div class="contact-info">
+                                                <h4>Name:</h4>
+                                                <p>Alexander Wilson van Deurs</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/mail.svg" alt="mail-icon"/>
-                                        
-                                        <div class="info-box-text">
-                                            <h3>Email:</h3>
-                                            <h5>alexwvd@outlook.com</h5>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/mail.svg" alt="mail-icon"/>
+                                            <div class="contact-info">
+                                                <h4>Email:</h4>
+                                                <p>alexwvd@outlook.com</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/smartphone-call.svg" alt="phone-icon"/>
-                                        <div class="info-box-text">
-                                            <h3>Phone:</h3>
-                                            <h5>(+46) -76-191-8324</h5>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/smartphone-call.svg" alt="phone-icon"/>              
+                                            <div class="contact-info">
+                                                <h4>Phone:</h4>
+                                                <p>(+46) -76-191-8324</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/worldwide.svg" alt="globe-icon"/>
-                                        <div class="info-box-text">
-                                            <h3>Nationality:</h3>
-                                            <h5>Sweden</h5>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/worldwide.svg" alt="globe-icon"/>
+                                            <div class="contact-info">
+                                                <h4>Nationality:</h4>
+                                                <p>Sweden</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/placeholder.svg" alt="man-logo"/>
-                                        <div class="info-box-text">
-                                            <h3>Area</h3>
-                                            <h5>Tyresö, Stockholm</h5>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/placeholder.svg" alt="man-logo"/> 
+                                            <div class="contact-info">
+                                                <h4>Area:</h4>
+                                                <p>Stockholm, Sweden</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="about-info-box">
-                                        <img src="resources/pictures/coding.svg" alt="computer-icon"/>
-                                        <div class="info-box-text">
-                                            <h3>Job Title</h3>
-                                            <h5>Front End Developer</h5>
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="about-info-box">
+                                            <img src="resources/pictures/coding.svg" alt="computer-icon"/>
+                                            <div class="contact-info">
+                                                <h4>Job Title:</h4>
+                                                <p>Front End Developer</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="about-text">
-                                    <p>Hi, my name is Alex! I am a freelance web developer living in Stockholm, Sweden. I have been programming since I was 14 years old, and I'm fully self taught. I have experience in different areas within programming, but web development is and has been my niche and full focus for the past years. I possess the skills to create top quality, professional websites for both individuals and companies using the latest techniques and trends. If you want something, I can make it happen for you. You can go all over the internet and find someone who could do the work for you in just a couple of days for a cheap price, but the quality will suffer, deeply. And that is the most important aspect of a website, it's quality. As I student, I do most of my work for a cheap price, in return for experience.</p>
+                                <div class="about-block">
+                                    <p>Hi, my name is Alex! I am a freelance web developer living in Stockholm, Sweden. I have been programming since I was 14 years old, and I'm fully self taught. I have experience in different areas within programming, but web development is and has been my niche and full focus for the past years. I possess the skills to create top quality, professional websites for both individuals and companies using the latest techniques and trends. If you want something, I can make it happen for you. You can go all over the internet and find someone who could do the work for you in just a couple of days for a cheap price, but the quality will suffer, deeply. And that is the most important aspect of a website, it's quality. As I student, I do most of my work for a cheap price, in return for experience</p>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
+        </div> 
         <!-- SERVICE PAGE -->
         
         <div class="site-wrapper" id="service">
@@ -169,7 +184,7 @@
                             <h3>What can I do for your business?</h3>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 service-box border-right">
-                            <img src="resources/pictures/browser.svg" alt="">
+                            <img src="resources/pictures/coding.svg" alt="computer-icon"/>
                             <h2>Web Development</h2>
                             <p>My main service is building custom and original websites. I always make sure to keep them unique, functional and modern. I develop most of my websites completely from scratch, with out without frameworks such as bootstrap. I can assure you that my websites are at the highest standards.</p>
                         

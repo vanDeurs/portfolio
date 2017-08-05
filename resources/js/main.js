@@ -1,18 +1,5 @@
 // Modernizr
 
-// If browser doesn't support flex-wrap
-if (!Modernizr.flexbox){
-    document.getElementById("about-info1").classList.remove('about-info');
-    document.getElementById("about-info1").classList.add('about-info-modern');
-    document.getElementById("about-top1").classList.remove('about-top');
-}
-
-if (!Modernizr.flexwrap){
-    document.getElementById("about-info1").classList.remove('about-info');
-    document.getElementById("about-info1").classList.add('about-info-modern');
-    document.getElementById("about-top1").classList.remove('about-top');
-}
-
 // If browser doesn't support vh unit
 if (!Modernizr.cssvhunit){
     document.getElementById("text-landing").classList.remove('text-landing');
@@ -27,6 +14,8 @@ $(document).ready(function() {
 	}, 1500);
 	
 });
+
+$('html').getNiceScroll().remove();
 
 // Sliding down and up when clicking to different parts of the page
 
@@ -110,6 +99,8 @@ $(window).scroll(function () {
         }
     }
 });
+
+
 
     //Features appearance
 /*$(window).scroll(function () {
