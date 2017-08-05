@@ -1,6 +1,12 @@
 // Modernizr
 
 // If browser doesn't support flex-wrap
+if (!Modernizr.flexbox){
+    document.getElementById("about-info1").classList.remove('about-info');
+    document.getElementById("about-info1").classList.add('about-info-modern');
+    document.getElementById("about-top1").classList.remove('about-top');
+}
+
 if (!Modernizr.flexwrap){
     document.getElementById("about-info1").classList.remove('about-info');
     document.getElementById("about-info1").classList.add('about-info-modern');
@@ -8,7 +14,7 @@ if (!Modernizr.flexwrap){
 }
 
 // If browser doesn't support vh unit
-if (!Modernizr.cssvhunit){
+if (Modernizr.cssvhunit){
     document.getElementById("text-landing").classList.remove('text-landing');
     document.getElementById("text-landing").classList.add('text-landing-modern');
 }
