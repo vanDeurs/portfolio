@@ -793,6 +793,12 @@ div.col-lg-4.col-sm-6:hover > .portfolio-box-caption  {
     opacity: 1;
 }
 
+@media only screen and (max-width:768px ){
+    .portfolio-box-caption{
+        opacity: 1;
+        border-bottom: 1px solid #fff;
+    }
+}
 
 
 
