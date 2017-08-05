@@ -1,13 +1,13 @@
 // Modernizr
 
 // If browser doesn't support vh unit
-if (Modernizr.cssvhunit){
+/*if (!Modernizr.cssvhunit){
     alert("This browser doesn't support vh units");
     document.getElementById("text-landing").classList.remove('text-landing');
     document.getElementById("text-landing").classList.add('text-landing-modern');
     document.getElementById("header-text").classList.remove('header-text');
     document.getElementById("header-text").classList.add('header-text-modern');
-}
+}*/
 
 // PRE LOADER
 $(document).ready(function() {
