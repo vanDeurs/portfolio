@@ -456,6 +456,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
+    -webkit-flex:1 1 auto;
 }
 
 /* Remove with modernizr */
@@ -468,6 +469,7 @@ body {
     width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-flex:1 1 auto;
 }
 .about-info-box {
     display: -webkit-box;
@@ -486,6 +488,7 @@ body {
     margin: .5% 0;
     width: 33%;
     min-width: 270px;
+    -webkit-flex:1 1 auto;
 }
 
 .info-box-text {
