@@ -530,12 +530,12 @@ body {
 }
 
 .about-text p {
-    font-size: 19.2px;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: #DCE2E3;
-    line-height: 1.4;
+    line-height: 1.6;
     font-weight: 500;
     text-align: left;
+    padding: 0 30px 0 0;
 }
 
 @media only screen and (max-width: 955px) {
@@ -560,15 +560,16 @@ body {
     .about-info-box {
         margin: 15px 0;
     }
+    .about-text p {
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 788px) {
     .about-text{
         padding: 0;
     }
-    .about-text p {
-        font-size: 1.3rem;
-    }
+
 }
 
 @media only screen and (max-width: 616px) {
@@ -602,10 +603,7 @@ body {
     .about-info-box {
         margin: 7px 0;
     }
-    .about-text p {
-        font-size: 1.1rem;
-        margin-top: 5px;
-    }
+
 }
 
 
@@ -618,7 +616,7 @@ body {
 }
 
 .service-text {
-    min-height: 150px;
+    height: 150px;
 }
 
 .service-text h1 {
@@ -683,6 +681,12 @@ body {
 @media only screen and (max-width: 825px){
     .service-box img{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .service-text {
+        height: 120px;
     }
 }
 
