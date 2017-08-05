@@ -1,7 +1,7 @@
 // Modernizr
 
 // If browser doesn't support flex-wrap
-if (!Modernizr.flexbox && Modernizr.flexwrap){
+if (!Modernizr.flexwrap){
     document.getElementById("about-info1").classList.remove('about-info');
     document.getElementById("about-info1").classList.add('about-info-modern');
     document.getElementById("about-top1").classList.remove('about-top');
@@ -106,16 +106,16 @@ $(window).scroll(function () {
 });
 
     //Features appearance
-    /*$(window).scroll(function () {
-        var scroll = $(window).scrollTop();
+/*$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
 
-        //>=, not <=
-        if (scroll >= 300) {
-            $(".about-info-box").addClass("feature-display");
-            $(".image-container").addClass("feature-display");
-            $(".about-text").addClass("feature-display");
-        }
-    });*/
+    //>=, not <=
+    if (scroll >= 300) {
+        $(".about-info-box").addClass("feature-display");
+        $(".image-container").addClass("feature-display");
+        $(".about-text").addClass("feature-display");
+    }
+});*/
 
 
 // Message in console for visitors.
