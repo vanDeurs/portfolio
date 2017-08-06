@@ -350,13 +350,13 @@ body {
 
 @media only screen and (max-width: 550px) {
     #header-text h5 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #header-text h3 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     #header-text h1 {
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
     .hire-button {
         top: 75%;
@@ -400,6 +400,15 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     color: #D2E4FF;
+}
+
+@media only screen and (max-width: 600px){
+    .about header h1 {
+        font-size: 3.7rem;
+    }
+    .about header h3 {
+        font-size: 1.3rem;
+    }
 }
 
 /* ABOUT ME TEXT MAIN*/
@@ -649,10 +658,10 @@ body {
         padding: 25px 20px;
     }
     .service-text h1 {
-        font-size: 4.4rem;
+        font-size: 3.8rem;
     }
     .service-text h3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .service-text {
         height: 100px;
