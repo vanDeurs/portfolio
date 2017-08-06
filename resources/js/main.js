@@ -21,6 +21,10 @@ var the_id = $(this).attr("href");
 
 return false;});
 
+/*if $(window).width() < 670px && $(window).height() < 820px {
+    $(".hire-button").css({"top","90%"});
+}*/
+
 
 
 //HEADER TEXT TRANSFORMATION 

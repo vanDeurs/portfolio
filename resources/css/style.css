@@ -346,6 +346,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 550px){
+    .hire-button {
+        display: none;
+    }
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 550px) {
