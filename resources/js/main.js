@@ -93,16 +93,6 @@ $(window).scroll(function () {
 });
 
 
-
-    //Features appearance
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 300){
-        $(".slide-in").addClass("feature-display");
-    }
-});
-
-
 // Message in console for visitors.
 Object.defineProperty(window, "console", {
     value: console,
