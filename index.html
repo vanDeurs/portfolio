@@ -9,7 +9,6 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="resources/css/style.css" type="text/css" rel="stylesheet">
       <link href="resources/css/pre-loader.css" rel="stylesheet" type="text/css">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
       <!-- GOOGLE FONTS -->
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:500i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
@@ -61,11 +60,11 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <!--<div class="navbar-brand">BRAND LOGO</div-->
                     <ul id="navbar" class="nav navbar-nav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a class="expand-right" href="#home">Home</a></li>
+                        <li><a class="expand-right" href="#about">About</a></li>
+                        <li><a class="expand-right"href="#service">Service</a></li>
+                        <li><a class="expand-right" href="#resume">Resume</a></li>
+                        <li><a class="expand-right" href="#contact">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -100,14 +99,14 @@
                                 <h1>About me</h1>
                                 <h3>Let me introduce myself.</h3>
                             </header>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                 <div class="image-container">
                                     <img src="resources/pictures/DSC_0191.JPG" alt="picture or Alexander Wilson van Deurs">
                                 </div>
                             </div>
                             <div class="contact-block">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/business-person-silhouette-wearing-tie.svg" alt=""/>
                                             <div class="contact-info">
@@ -116,7 +115,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/mail.svg" alt="mail-icon"/>
                                             <div class="contact-info">
@@ -125,7 +124,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/smartphone-call.svg" alt="phone-icon"/>              
                                             <div class="contact-info">
@@ -135,7 +134,7 @@
                                         </div>
                                     </div>
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/worldwide.svg" alt="globe-icon"/>
                                             <div class="contact-info">
@@ -144,7 +143,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/placeholder.svg" alt="man-logo"/> 
                                             <div class="contact-info">
@@ -153,7 +152,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <div id="slide" class="col-lg-4 col-md-4 col-sm-12 slide-in">
                                         <div class="about-info-box">
                                             <img src="resources/pictures/coding.svg" alt="computer-icon"/>
                                             <div class="contact-info">
@@ -163,7 +162,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-block">
+                                <div id="slide" class="about-block slide-in">
                                     <p>Hi, my name is Alex! I am a freelance web developer living in Stockholm, Sweden. I have been programming since I was 14 years old, and I'm fully self taught. I have experience in different areas within programming, but web development is and has been my niche and full focus for the past years. I possess the skills to create top quality, professional websites for both individuals and companies using the latest techniques and trends. If you want something, I can make it happen for you. You can go all over the internet and find someone who could do the work for you in just a couple of days for a cheap price, but the quality will suffer, deeply. And that is the most important aspect of a website, it's quality. As I student, I do most of my work for a cheap price, in return for experience</p>
                                 </div>
                             </div>
@@ -232,21 +231,21 @@
                                     Colmar Academy
                                 </div>
                                 <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/Colmar-Academy/" target="_blank" class="expand-right">Visit Project</a>
                                 </div>
                             </div>
                         </div>
                 </div>
                 
                  <div class="col-lg-4 col-sm-6 portfolio-image">
-                        <img src="/resources/pictures/tea-cozy.jpg" class="img-responsive" alt="">
+                        <img src="/resources/pictures/jumpstart.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Tea Cozy
+                                    Jumpstart
                                 </div>
                                    <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/Jumpstart/" target="_blank" class="expand-right">Visit Project</a>
                                 </div>
                             </div>
                         </div>
@@ -260,20 +259,20 @@
                                     Fotomatic
                                 </div>
                                 <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/fotomatic/" class="expand-right" target="_blank">Visit Project</a>
                                 </div>
                             </div>
                         </div>
                 </div>
                  <div class="col-lg-4 col-sm-6 portfolio-image">
-                    <img src="/resources/pictures/landing-portfolio.jpg" class="img-responsive" alt="">
+                    <img src="/resources/pictures/dentist.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Landing Page (Portfolio)
+                                    Optics
                                 </div>
                                 <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/shell-optics/" class="expand-right" target="_blank">Visit Project</a>
                                 </div>
                             </div>
                         </div>
@@ -287,28 +286,28 @@
                                     Marocco
                                 </div>
                                 <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/Blade/" class="expand-right" target="_blank">Visit Project</a>
                                 </div>
                             </div>
                         </div>
                 </div>
                 
                  <div class="col-lg-4 col-sm-6 portfolio-image">
-                        <img src="/resources/pictures/fotomatic.jpg" class="img-responsive" alt="">
+                        <img src="/resources/pictures/tea-cozy.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    ----
+                                    Tea Cozy
                                 </div>
                                 <div class="project-link">
-                                    <a href="#" class="expand-right">Visit Project</a>
+                                    <a href="http://www.charlesvandeurs.tk/tea-cozy/" class="expand-right" target="_blank">Visit Project</a>
                                 </div>
                             </div>
-                        </div>
+                     </div>
+                </div>
                 </div>
                 
             </div>
-        </div>
         
         <!-- CONTACT PAGE -->
         <section id="contact">
@@ -354,7 +353,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <!-- Javascript Files -->
 
-        <script src="resources/js/modernizr.min.js"></script>
         <script src="./resources/js/main.js"></script>
         
         <!-- modernizr -->

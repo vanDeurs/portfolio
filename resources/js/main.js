@@ -1,14 +1,3 @@
-// Modernizr
-
-// If browser doesn't support vh unit
-/*if (!Modernizr.cssvhunit){
-    alert("This browser doesn't support vh units");
-    document.getElementById("text-landing").classList.remove('text-landing');
-    document.getElementById("text-landing").classList.add('text-landing-modern');
-    document.getElementById("header-text").classList.remove('header-text');
-    document.getElementById("header-text").classList.add('header-text-modern');
-}*/
-
 // PRE LOADER
 $(document).ready(function() {
 	
@@ -17,6 +6,8 @@ $(document).ready(function() {
 	}, 1500);
 	
 });
+
+// 
 
 // Sliding down and up when clicking to different parts of the page
 
@@ -104,16 +95,12 @@ $(window).scroll(function () {
 
 
     //Features appearance
-/*$(window).scroll(function () {
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
-
-    //>=, not <=
-    if (scroll >= 300) {
-        $(".about-info-box").addClass("feature-display");
-        $(".image-container").addClass("feature-display");
-        $(".about-text").addClass("feature-display");
+    if (scroll >= 300){
+        $(".slide-in").addClass("feature-display");
     }
-});*/
+});
 
 
 // Message in console for visitors.
