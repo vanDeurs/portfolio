@@ -673,7 +673,10 @@ body {
     .service-text {
         height: 100px;
     }
-    
+    .service-box h2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
 }
 
 
