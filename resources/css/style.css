@@ -621,6 +621,12 @@ img.navbar-brand{
 .service-box {
     border-bottom: 1px solid #202C3D;
     min-height: 350px;
+    -webkit-box-shadow: 7px 10px 21px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 21px 1px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 21px 1px rgba(0,0,0,0.75);
+    height: 450px;
+    padding: 10px;
+
 }
 
 .service-box img {
@@ -656,6 +662,12 @@ img.navbar-brand{
 
 .border-right {
     border-right: 1px solid #000;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.border-left {
+    margin-left: 15px;
 }
 
 @media only screen and (max-width: 1196px){
@@ -927,3 +939,7 @@ p.contact-p {
 
 
 
+
+.border-left {
+    
+}
