@@ -109,7 +109,7 @@ Object.defineProperty(console, '_commandLineAPI',
     { get : function() {
         if (!i) {
             setTimeout(function () {
-                console.log("%cStop right here, you little cheater! :)", "font: 1.5em sans-serif; color: yellow; background-color: red;");
+                console.log("%cHello there! :)", "font: 1em sans-serif; color: yellow; background-color: red;");
             }, 1);
             i = 1;
         }
