@@ -588,13 +588,69 @@ img.navbar-brand {
 }
 
 
-    /* RIGHT ABOUT BOXES*/
+/* RIGHT ABOUT BOXES*/
 
+/* COMMENT SECTION */
 
+.comment {
+    background: #202C3D;
+    padding-top: 1%;
+    /* padding-bottom: 1%; */
+    min-height: 500px;
+}
+
+.comments-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.comments-text h3 {
+    font-size: 32px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #f3f3f3;
+}
+
+/* .comments-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+ 
+
+.comments {
+    height: 430px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments-made {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.comments-container {
+    /* border: 1px solid white; */
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+}
+
+#quotations-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-self: flex-start;
+    /* margin-left: 40px; */
+
+}
 
 /* SERVICE SECTION */
-
-
 
 .service {
     background: -moz-linear-gradient(-45deg, rgba(30,37,46,1) 0%, rgba(55,68,84,1) 38%, rgba(47,59,74,1) 51%, rgba(45,56,71,1) 55%, rgba(33,42,54,1) 70%, rgba(29,38,51,1) 83%, rgba(39,51,66,1) 93%, rgba(47,55,66,1) 98%, rgba(47,55,66,1) 100%);
@@ -911,7 +967,7 @@ div.col-lg-4.col-sm-6:hover > .portfolio-box-caption  {
 }
 
 .contact {
-    height: 200px;
+    /* height: 200px; */
     border-top: 1px solid black;
 }
 

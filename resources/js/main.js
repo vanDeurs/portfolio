@@ -109,11 +109,11 @@ Object.defineProperty(console, '_commandLineAPI',
     { get : function() {
         if (!i) {
             setTimeout(function () {
-                console.log("%cHello there! :)", "font: 1em sans-serif; color: yellow; background-color: red;");
+                console.log("%cRun you fool!", "font: 1em sans-serif; color: yellow; background-color: red;");
             }, 1);
             i = 1;
         }
-        throw "This is my private zone!";
+        throw ": You shall not pass!";
 
     } })
 
