@@ -32,11 +32,11 @@
     </head>
     <body id="home">
         <!-- PRE-LOADER -->
-        <div id="loader-wrapper">
+        <!-- <div id="loader-wrapper">
             <div id="loader"></div>
             <div class="loader-section section-left"></div>
             <div class="loader-section section-right"></div>
-        </div>
+        </div> -->
         <script class="nicescroll" src="/resources/js/jquery.nicescroll.js"></script>
         <script>
             $("html").niceScroll({
@@ -67,7 +67,8 @@
                         <img src="resources/pictures/logo2.svg" class="navbar-brand"/>
                         <li><a class="expand-right" href="#home">Home</a></li>
                         <li><a class="expand-right" href="#about">About</a></li>
-                        <li><a class="expand-right" href="#service">Stack</a></li>
+                        <li><a class="expand-right" href="#service">Service</a></li>
+                        <li><a class="expand-right" href="#stack">Stack</a></li>
                         <li><a class="expand-right" href="#resume">Resume</a></li>
                         <li><a class="expand-right" href="#contact">contact</a></li>
                     </ul>
@@ -183,49 +184,89 @@
             <div class="site-wrapper-inner">
                 <div class="service container-fluid">
                         <div class="col-xs-12 service-text">
-                            <h1>Stack</h1>
+                            <h1>Service</h1>
                             <h3>What do I do?</h3>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-1 service-box border-right">
                             <h2><img src="resources/pictures/coding.svg" alt="computer-icon"/> Back-end Development</h2>
                             <p class="tech-text">Connecting to databases, setting up servers, and building routes. These are everyday things I do within back-end development. Being able to understand both sides of the development makes it so much easier to communicate with colleagues and see the product from different perspectives.</p>
-                            <ul>
-                                <li class="ul-header">Languages and Frameworks</li>
-                                <li>Python</li>
-                                <li>Node JS</li>
-                                <li>Express JS</li>
-                                <li>SQLite</li>
-                            </ul>
-                            <ul>
-                                <li class="ul-header">Development Tools</li>
-                                <li>Git</li>
-                                <li>Terminal</li>
-                                <li>Github</li>
-                                <li>Bitbucket</li>
-                                <li>Trello</li>
-                                <li>Babel</li>
-                                <li>Webpack</li>
-                                <li>CodePen</li>
-                                <li>Visual Studio Code</li>
-                                
-                            </ul>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-2 service-box border-left">
                             <h2><img src="resources/pictures/website-design-symbol.svg" alt=""> Front-end Development</h2>
-                            <p class="tech-text">I build everything that has to do with what you actually see and interact with on the product. I always make sure to keep my applications and websites unique, functional and up to date. I develop with or without frameworks such as bootstrap, and I can assure you that all of my work is at the highest standards. </p>
-                            <ul>
-                                <li class="ul-header">Languages and Frameworks</li>
-                                <li>Javascript (ES5, ES6 && ES7)</li>
-                                <li>React JS</li>
-                                <li>React Native</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap 4</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
+                            <p class="tech-text">I build everything that has to do with what you actually see and interact with on the product. I always make sure to keep my applications and websites unique, functional and up to date. I develop with or without frameworks such as bootstrap, and I can assure you that all of my work are at the highest standards. </p>
                         </div>
                     </div>
                 </div>
+        </div>
+
+        <div class="site-wrapper" id="stack">
+            <div class="site-wrapper-inner">
+                <div class="stack container-fluid">
+                    <div class="col-xs-12 stack-text">
+                            <h1>Stack</h1>
+                            <h3>How do I do it?</h3>
+                    </div>
+                    <div class="stack-wrapper">
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Frontend languages</li>
+                                <li>HTML</li>
+                                <li>CSS (+ Sass)</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Frontend frameworks/libraries</li>
+                                <li>React.js</li>
+                                <li>React Native</li>
+                                <li>Bootstrap</li>
+                                <li>jQuery</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Backend languages</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Backend frameworks/libraries</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Socket.io</li>
+                                <li>Node-SQLite</li>
+                                <li>Flask</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Databases</li>
+                                <li>SQLite</li>
+                                <li>MongoDB (+ Mongoose)</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Testing frameworks</li>
+                                <li>Mocha</li>
+                                <li>Chai</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Tools</li>
+                                <li>Terminal</li>
+                                <li>NPM</li>
+                                <li>ESlint</li>
+                                <li>Postman</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
+
+                            <ul class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                                <li class="ul-header">Task and Project Management</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>Bitbucket</li>
+                                <li>Trello</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div class="container-fluid" id="resume">

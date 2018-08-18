@@ -661,7 +661,7 @@ img.navbar-brand {
     background: linear-gradient(135deg, rgba(30,37,46,1) 0%, rgba(55,68,84,1) 38%, rgba(47,59,74,1) 51%, rgba(45,56,71,1) 55%, rgba(33,42,54,1) 70%, rgba(29,38,51,1) 83%, rgba(39,51,66,1) 93%, rgba(47,55,66,1) 98%, rgba(47,55,66,1) 100%);
     padding-top: 1%;
     padding-bottom: 1%;
-    min-height: 750px;
+    min-height: 450px;
 }
 
 .service-text {
@@ -717,9 +717,8 @@ img.navbar-brand {
     min-height: 140px;
 }
 
-.ul-header {
-    font-weight: 600;
-    color: #07cb79;
+.stack-container {
+    text-align: start;
 }
 
 .service-box ul {
@@ -730,6 +729,62 @@ img.navbar-brand {
 .service-box ul li {
     font-size: 1.1rem;
     line-height: 1.7;
+}
+
+/* STACK SECTION */
+
+.stack {
+    /* background: rgb(247,247,251); Old browsers */
+    /* background: -moz-linear-gradient(top, rgba(247,247,251,1) 0%, rgba(247,247,251,1) 7%, rgba(247,247,251,1) 12%, rgba(255,255,255,1) 12%, rgba(247,247,251,1) 30%, rgba(240,239,247,1) 54%, rgba(238,235,245,1) 75%, rgba(234,230,242,1) 100%); FF3.6-15 */
+    /* background: -webkit-linear-gradient(top, rgba(247,247,251,1) 0%,rgba(247,247,251,1) 7%,rgba(247,247,251,1) 12%,rgba(255,255,255,1) 12%,rgba(247,247,251,1) 30%,rgba(240,239,247,1) 54%,rgba(238,235,245,1) 75%,rgba(234,230,242,1) 100%); Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(to bottom, rgba(247,247,251,1) 0%,rgba(247,247,251,1) 7%,rgba(247,247,251,1) 12%,rgba(255,255,255,1) 12%,rgba(247,247,251,1) 30%,rgba(240,239,247,1) 54%,rgba(238,235,245,1) 75%,rgba(234,230,242,1) 100%); */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    min-height: 500px;
+}
+
+.stack-text {
+    height: 150px;
+}
+
+.stack-text h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #202C3D
+}
+
+.stack-text h3 {
+    font-size: 32px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #202C3D
+}
+
+.stack-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.stack-wrapper ul {
+    /* border: 1px solid black; */
+    text-align: start;
+    line-height: 1.7rem;
+    /* width: 25%; */
+}
+
+.stack-wrapper ul li {
+    color: #202C3D;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stack-wrapper ul .ul-header {
+    color: #07cb79;
+    font-weight: 700;
 }
 
 
