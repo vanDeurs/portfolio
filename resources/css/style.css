@@ -740,7 +740,7 @@ img.navbar-brand {
     /* background: linear-gradient(to bottom, rgba(247,247,251,1) 0%,rgba(247,247,251,1) 7%,rgba(247,247,251,1) 12%,rgba(255,255,255,1) 12%,rgba(247,247,251,1) 30%,rgba(240,239,247,1) 54%,rgba(238,235,245,1) 75%,rgba(234,230,242,1) 100%); */
     padding-top: 1%;
     padding-bottom: 1%;
-    min-height: 500px;
+    min-height: 300px;
 }
 
 .stack-text {
